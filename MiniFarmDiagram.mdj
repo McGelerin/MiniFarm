@@ -1,0 +1,2651 @@
+{
+	"_type": "Project",
+	"_id": "AAAAAAFF+h6SjaM2Hec=",
+	"name": "Mini Farm",
+	"ownedElements": [
+		{
+			"_type": "UMLModel",
+			"_id": "AAAAAAFF+qBWK6M3Z8Y=",
+			"_parent": {
+				"$ref": "AAAAAAFF+h6SjaM2Hec="
+			},
+			"name": "ClassDiagram",
+			"ownedElements": [
+				{
+					"_type": "UMLClassDiagram",
+					"_id": "AAAAAAFF+qBtyKM79qY=",
+					"_parent": {
+						"$ref": "AAAAAAFF+qBWK6M3Z8Y="
+					},
+					"name": "Class",
+					"defaultDiagram": true,
+					"ownedViews": [
+						{
+							"_type": "UMLEnumerationView",
+							"_id": "AAAAAAGVm46FIwnK3AY=",
+							"_parent": {
+								"$ref": "AAAAAAFF+qBtyKM79qY="
+							},
+							"model": {
+								"$ref": "AAAAAAGVm46FIgnIYjA="
+							},
+							"subViews": [
+								{
+									"_type": "UMLNameCompartmentView",
+									"_id": "AAAAAAGVm46FIwnLsLw=",
+									"_parent": {
+										"$ref": "AAAAAAGVm46FIwnK3AY="
+									},
+									"model": {
+										"$ref": "AAAAAAGVm46FIgnIYjA="
+									},
+									"subViews": [
+										{
+											"_type": "LabelView",
+											"_id": "AAAAAAGVm46FIwnM3eQ=",
+											"_parent": {
+												"$ref": "AAAAAAGVm46FIwnLsLw="
+											},
+											"font": "Arial;13;0",
+											"left": 157,
+											"top": 149,
+											"width": 150,
+											"height": 13,
+											"text": "«enumeration»"
+										},
+										{
+											"_type": "LabelView",
+											"_id": "AAAAAAGVm46FIwnNLHc=",
+											"_parent": {
+												"$ref": "AAAAAAGVm46FIwnLsLw="
+											},
+											"font": "Arial;13;1",
+											"left": 157,
+											"top": 164,
+											"width": 150,
+											"height": 13,
+											"text": "Currency"
+										},
+										{
+											"_type": "LabelView",
+											"_id": "AAAAAAGVm46FIwnOy9Y=",
+											"_parent": {
+												"$ref": "AAAAAAGVm46FIwnLsLw="
+											},
+											"visible": false,
+											"font": "Arial;13;0",
+											"left": -816,
+											"top": -1056,
+											"width": 119.90087890625,
+											"height": 13,
+											"text": "(from ClassDiagram)"
+										},
+										{
+											"_type": "LabelView",
+											"_id": "AAAAAAGVm46FIwnPwZU=",
+											"_parent": {
+												"$ref": "AAAAAAGVm46FIwnLsLw="
+											},
+											"visible": false,
+											"font": "Arial;13;0",
+											"left": -816,
+											"top": -1056,
+											"height": 13,
+											"horizontalAlignment": 1
+										}
+									],
+									"font": "Arial;13;0",
+									"left": 152,
+									"top": 144,
+									"width": 160,
+									"height": 38,
+									"stereotypeLabel": {
+										"$ref": "AAAAAAGVm46FIwnM3eQ="
+									},
+									"nameLabel": {
+										"$ref": "AAAAAAGVm46FIwnNLHc="
+									},
+									"namespaceLabel": {
+										"$ref": "AAAAAAGVm46FIwnOy9Y="
+									},
+									"propertyLabel": {
+										"$ref": "AAAAAAGVm46FIwnPwZU="
+									}
+								},
+								{
+									"_type": "UMLAttributeCompartmentView",
+									"_id": "AAAAAAGVm46FIwnQvoU=",
+									"_parent": {
+										"$ref": "AAAAAAGVm46FIwnK3AY="
+									},
+									"model": {
+										"$ref": "AAAAAAGVm46FIgnIYjA="
+									},
+									"visible": false,
+									"font": "Arial;13;0",
+									"left": -408,
+									"top": -528,
+									"width": 10,
+									"height": 10
+								},
+								{
+									"_type": "UMLOperationCompartmentView",
+									"_id": "AAAAAAGVm46FIwnRCyA=",
+									"_parent": {
+										"$ref": "AAAAAAGVm46FIwnK3AY="
+									},
+									"model": {
+										"$ref": "AAAAAAGVm46FIgnIYjA="
+									},
+									"visible": false,
+									"font": "Arial;13;0",
+									"left": -408,
+									"top": -528,
+									"width": 10,
+									"height": 10
+								},
+								{
+									"_type": "UMLReceptionCompartmentView",
+									"_id": "AAAAAAGVm46FIwnSt+E=",
+									"_parent": {
+										"$ref": "AAAAAAGVm46FIwnK3AY="
+									},
+									"model": {
+										"$ref": "AAAAAAGVm46FIgnIYjA="
+									},
+									"visible": false,
+									"font": "Arial;13;0",
+									"left": -408,
+									"top": -528,
+									"width": 10,
+									"height": 10
+								},
+								{
+									"_type": "UMLTemplateParameterCompartmentView",
+									"_id": "AAAAAAGVm46FIwnTzTA=",
+									"_parent": {
+										"$ref": "AAAAAAGVm46FIwnK3AY="
+									},
+									"model": {
+										"$ref": "AAAAAAGVm46FIgnIYjA="
+									},
+									"visible": false,
+									"font": "Arial;13;0",
+									"left": -408,
+									"top": -528,
+									"width": 10,
+									"height": 10
+								},
+								{
+									"_type": "UMLEnumerationLiteralCompartmentView",
+									"_id": "AAAAAAGVm46FIwnUMAQ=",
+									"_parent": {
+										"$ref": "AAAAAAGVm46FIwnK3AY="
+									},
+									"model": {
+										"$ref": "AAAAAAGVm46FIgnIYjA="
+									},
+									"subViews": [
+										{
+											"_type": "UMLEnumerationLiteralView",
+											"_id": "AAAAAAGVm5Hs6gn5hBs=",
+											"_parent": {
+												"$ref": "AAAAAAGVm46FIwnUMAQ="
+											},
+											"model": {
+												"$ref": "AAAAAAGVm5Hs5Qn2E40="
+											},
+											"font": "Arial;13;0",
+											"left": 157,
+											"top": 187,
+											"width": 150,
+											"height": 13,
+											"text": "Hay",
+											"horizontalAlignment": 0
+										},
+										{
+											"_type": "UMLEnumerationLiteralView",
+											"_id": "AAAAAAGVm5H7/woAHPg=",
+											"_parent": {
+												"$ref": "AAAAAAGVm46FIwnUMAQ="
+											},
+											"model": {
+												"$ref": "AAAAAAGVm5H7/gn9+aU="
+											},
+											"font": "Arial;13;0",
+											"left": 157,
+											"top": 202,
+											"width": 150,
+											"height": 13,
+											"text": "Flour",
+											"horizontalAlignment": 0
+										},
+										{
+											"_type": "UMLEnumerationLiteralView",
+											"_id": "AAAAAAGVm5IacwoHWyQ=",
+											"_parent": {
+												"$ref": "AAAAAAGVm46FIwnUMAQ="
+											},
+											"model": {
+												"$ref": "AAAAAAGVm5IacgoEQuA="
+											},
+											"font": "Arial;13;0",
+											"left": 157,
+											"top": 217,
+											"width": 150,
+											"height": 13,
+											"text": "Bread",
+											"horizontalAlignment": 0
+										}
+									],
+									"font": "Arial;13;0",
+									"left": 152,
+									"top": 182,
+									"width": 160,
+									"height": 53
+								}
+							],
+							"font": "Arial;13;0",
+							"containerChangeable": true,
+							"left": 152,
+							"top": 144,
+							"width": 160,
+							"height": 144,
+							"nameCompartment": {
+								"$ref": "AAAAAAGVm46FIwnLsLw="
+							},
+							"suppressAttributes": true,
+							"suppressOperations": true,
+							"attributeCompartment": {
+								"$ref": "AAAAAAGVm46FIwnQvoU="
+							},
+							"operationCompartment": {
+								"$ref": "AAAAAAGVm46FIwnRCyA="
+							},
+							"receptionCompartment": {
+								"$ref": "AAAAAAGVm46FIwnSt+E="
+							},
+							"templateParameterCompartment": {
+								"$ref": "AAAAAAGVm46FIwnTzTA="
+							},
+							"enumerationLiteralCompartment": {
+								"$ref": "AAAAAAGVm46FIwnUMAQ="
+							}
+						}
+					]
+				},
+				{
+					"_type": "UMLEnumeration",
+					"_id": "AAAAAAGVm46FIgnIYjA=",
+					"_parent": {
+						"$ref": "AAAAAAFF+qBWK6M3Z8Y="
+					},
+					"name": "Currency",
+					"literals": [
+						{
+							"_type": "UMLEnumerationLiteral",
+							"_id": "AAAAAAGVm5Hs5Qn2E40=",
+							"_parent": {
+								"$ref": "AAAAAAGVm46FIgnIYjA="
+							},
+							"name": "Hay"
+						},
+						{
+							"_type": "UMLEnumerationLiteral",
+							"_id": "AAAAAAGVm5H7/gn9+aU=",
+							"_parent": {
+								"$ref": "AAAAAAGVm46FIgnIYjA="
+							},
+							"name": "Flour"
+						},
+						{
+							"_type": "UMLEnumerationLiteral",
+							"_id": "AAAAAAGVm5IacgoEQuA=",
+							"_parent": {
+								"$ref": "AAAAAAGVm46FIgnIYjA="
+							},
+							"name": "Bread"
+						}
+					]
+				}
+			]
+		},
+		{
+			"_type": "FCFlowchart",
+			"_id": "AAAAAAGVmyFTPAVw1EY=",
+			"_parent": {
+				"$ref": "AAAAAAFF+h6SjaM2Hec="
+			},
+			"name": "GameFlow",
+			"ownedElements": [
+				{
+					"_type": "FCFlowchartDiagram",
+					"_id": "AAAAAAGVmyFTPAVxDdI=",
+					"_parent": {
+						"$ref": "AAAAAAGVmyFTPAVw1EY="
+					},
+					"name": "MiniFarmFlowchartDiagram",
+					"ownedViews": [
+						{
+							"_type": "FCTerminatorView",
+							"_id": "AAAAAAGVmyLwIwWGSrE=",
+							"_parent": {
+								"$ref": "AAAAAAGVmyFTPAVxDdI="
+							},
+							"model": {
+								"$ref": "AAAAAAGVmyLwIwWESdA="
+							},
+							"subViews": [
+								{
+									"_type": "LabelView",
+									"_id": "AAAAAAGVmyLwIwWHrOs=",
+									"_parent": {
+										"$ref": "AAAAAAGVmyLwIwWGSrE="
+									},
+									"fillColor": "#ffff00",
+									"font": "Arial;25;0",
+									"left": 1337,
+									"top": 264,
+									"width": 205,
+									"height": 25,
+									"text": "Start"
+								}
+							],
+							"fillColor": "#ffff00",
+							"font": "Arial;25;0",
+							"left": 1327,
+							"top": 254,
+							"width": 225,
+							"height": 51,
+							"nameLabel": {
+								"$ref": "AAAAAAGVmyLwIwWHrOs="
+							},
+							"wordWrap": false
+						},
+						{
+							"_type": "FCProcessView",
+							"_id": "AAAAAAGVmyYPqQXPrww=",
+							"_parent": {
+								"$ref": "AAAAAAGVmyFTPAVxDdI="
+							},
+							"model": {
+								"$ref": "AAAAAAGVmyYPqQXNduQ="
+							},
+							"subViews": [
+								{
+									"_type": "LabelView",
+									"_id": "AAAAAAGVmyYPqQXQ4Aw=",
+									"_parent": {
+										"$ref": "AAAAAAGVmyYPqQXPrww="
+									},
+									"font": "Arial;13;0",
+									"left": 1346,
+									"top": 410,
+									"width": 196,
+									"height": 26,
+									"text": "Save Dosyasına Göre Zaman Kontrolü",
+									"wordWrap": true
+								}
+							],
+							"font": "Arial;13;0",
+							"left": 1336,
+							"top": 400,
+							"width": 216,
+							"height": 46,
+							"nameLabel": {
+								"$ref": "AAAAAAGVmyYPqQXQ4Aw="
+							}
+						},
+						{
+							"_type": "FCFlowView",
+							"_id": "AAAAAAGVmyhbEwXmNu4=",
+							"_parent": {
+								"$ref": "AAAAAAGVmyFTPAVxDdI="
+							},
+							"model": {
+								"$ref": "AAAAAAGVmyhbEwXkKTc="
+							},
+							"subViews": [
+								{
+									"_type": "EdgeLabelView",
+									"_id": "AAAAAAGVmyhbEwXndXc=",
+									"_parent": {
+										"$ref": "AAAAAAGVmyhbEwXmNu4="
+									},
+									"model": {
+										"$ref": "AAAAAAGVmyhbEwXkKTc="
+									},
+									"visible": false,
+									"font": "Arial;13;0",
+									"left": 1454,
+									"top": 345,
+									"height": 13,
+									"alpha": 1.5707963267948966,
+									"distance": 15,
+									"hostEdge": {
+										"$ref": "AAAAAAGVmyhbEwXmNu4="
+									},
+									"edgePosition": 1
+								}
+							],
+							"font": "Arial;13;0",
+							"head": {
+								"$ref": "AAAAAAGVmyYPqQXPrww="
+							},
+							"tail": {
+								"$ref": "AAAAAAGVmyLwIwWGSrE="
+							},
+							"lineStyle": 2,
+							"points": "1440:304;1440:400",
+							"nameLabel": {
+								"$ref": "AAAAAAGVmyhbEwXndXc="
+							}
+						},
+						{
+							"_type": "FCDecisionView",
+							"_id": "AAAAAAGVmyn2ugXwZjE=",
+							"_parent": {
+								"$ref": "AAAAAAGVmyFTPAVxDdI="
+							},
+							"model": {
+								"$ref": "AAAAAAGVmyn2ugXuTgU="
+							},
+							"subViews": [
+								{
+									"_type": "LabelView",
+									"_id": "AAAAAAGVmyn2ugXxreg=",
+									"_parent": {
+										"$ref": "AAAAAAGVmyn2ugXwZjE="
+									},
+									"font": "Arial;13;0",
+									"left": 1390,
+									"top": 806.25,
+									"width": 108,
+									"height": 60.5,
+									"text": "Herhangi bir factorye tıklandı mı?",
+									"wordWrap": true
+								}
+							],
+							"font": "Arial;13;0",
+							"left": 1336,
+							"top": 776,
+							"width": 216,
+							"height": 121,
+							"nameLabel": {
+								"$ref": "AAAAAAGVmyn2ugXxreg="
+							}
+						},
+						{
+							"_type": "FCFlowView",
+							"_id": "AAAAAAGVmysFKwYBQ/w=",
+							"_parent": {
+								"$ref": "AAAAAAGVmyFTPAVxDdI="
+							},
+							"model": {
+								"$ref": "AAAAAAGVmysFKwX/Y80="
+							},
+							"subViews": [
+								{
+									"_type": "EdgeLabelView",
+									"_id": "AAAAAAGVmysFKwYCZpU=",
+									"_parent": {
+										"$ref": "AAAAAAGVmysFKwYBQ/w="
+									},
+									"model": {
+										"$ref": "AAAAAAGVmysFKwX/Y80="
+									},
+									"visible": false,
+									"font": "Arial;13;0",
+									"left": 1457,
+									"top": 487,
+									"height": 13,
+									"alpha": 1.5707963267948966,
+									"distance": 15,
+									"hostEdge": {
+										"$ref": "AAAAAAGVmysFKwYBQ/w="
+									},
+									"edgePosition": 1
+								}
+							],
+							"font": "Arial;13;0",
+							"head": {
+								"$ref": "AAAAAAGVmzPTIgaU3iA="
+							},
+							"tail": {
+								"$ref": "AAAAAAGVmyYPqQXPrww="
+							},
+							"lineStyle": 2,
+							"points": "1443:445;1443:544",
+							"nameLabel": {
+								"$ref": "AAAAAAGVmysFKwYCZpU="
+							}
+						},
+						{
+							"_type": "FCFlowView",
+							"_id": "AAAAAAGVmytf8wYZqQg=",
+							"_parent": {
+								"$ref": "AAAAAAGVmyFTPAVxDdI="
+							},
+							"model": {
+								"$ref": "AAAAAAGVmytf8wYX1+k="
+							},
+							"subViews": [
+								{
+									"_type": "EdgeLabelView",
+									"_id": "AAAAAAGVmytf8wYaBVM=",
+									"_parent": {
+										"$ref": "AAAAAAGVmytf8wYZqQg="
+									},
+									"model": {
+										"$ref": "AAAAAAGVmytf8wYX1+k="
+									},
+									"font": "Arial;13;0",
+									"left": 1576,
+									"top": 812,
+									"width": 9.38818359375,
+									"height": 13,
+									"alpha": -3.5904733113015297,
+									"distance": 212.00235847744713,
+									"hostEdge": {
+										"$ref": "AAAAAAGVmytf8wYZqQg="
+									},
+									"edgePosition": 1,
+									"text": "N"
+								}
+							],
+							"font": "Arial;13;0",
+							"head": {
+								"$ref": "AAAAAAGVmyYPqQXPrww="
+							},
+							"tail": {
+								"$ref": "AAAAAAGVmyn2ugXwZjE="
+							},
+							"lineStyle": 2,
+							"points": "1551:832;1672:832;1672:422;1551:422",
+							"nameLabel": {
+								"$ref": "AAAAAAGVmytf8wYaBVM="
+							}
+						},
+						{
+							"_type": "FCDecisionView",
+							"_id": "AAAAAAGVmyxfDAYutb0=",
+							"_parent": {
+								"$ref": "AAAAAAGVmyFTPAVxDdI="
+							},
+							"model": {
+								"$ref": "AAAAAAGVmyxfDAYsFyI="
+							},
+							"subViews": [
+								{
+									"_type": "LabelView",
+									"_id": "AAAAAAGVmyxfDAYvk18=",
+									"_parent": {
+										"$ref": "AAAAAAGVmyxfDAYutb0="
+									},
+									"font": "Arial;13;0",
+									"left": 1394,
+									"top": 1016,
+									"width": 100,
+									"height": 48,
+									"text": "Ham madde factory ye mi tıklandı?",
+									"wordWrap": true
+								}
+							],
+							"font": "Arial;13;0",
+							"left": 1344,
+							"top": 992,
+							"width": 200,
+							"height": 96,
+							"nameLabel": {
+								"$ref": "AAAAAAGVmyxfDAYvk18="
+							}
+						},
+						{
+							"_type": "FCFlowView",
+							"_id": "AAAAAAGVmy0aSwY5Xt8=",
+							"_parent": {
+								"$ref": "AAAAAAGVmyFTPAVxDdI="
+							},
+							"model": {
+								"$ref": "AAAAAAGVmy0aSwY3Om8="
+							},
+							"subViews": [
+								{
+									"_type": "EdgeLabelView",
+									"_id": "AAAAAAGVmy0aSwY668Q=",
+									"_parent": {
+										"$ref": "AAAAAAGVmy0aSwY5Xt8="
+									},
+									"model": {
+										"$ref": "AAAAAAGVmy0aSwY3Om8="
+									},
+									"visible": false,
+									"font": "Arial;13;0",
+									"left": 1457,
+									"top": 937,
+									"height": 13,
+									"alpha": 1.5707963267948966,
+									"distance": 15,
+									"hostEdge": {
+										"$ref": "AAAAAAGVmy0aSwY5Xt8="
+									},
+									"edgePosition": 1
+								}
+							],
+							"font": "Arial;13;0",
+							"head": {
+								"$ref": "AAAAAAGVmyxfDAYutb0="
+							},
+							"tail": {
+								"$ref": "AAAAAAGVmyn2ugXwZjE="
+							},
+							"lineStyle": 2,
+							"points": "1443:896;1443:992",
+							"nameLabel": {
+								"$ref": "AAAAAAGVmy0aSwY668Q="
+							}
+						},
+						{
+							"_type": "FCDecisionView",
+							"_id": "AAAAAAGVmy32rwZC0I0=",
+							"_parent": {
+								"$ref": "AAAAAAGVmyFTPAVxDdI="
+							},
+							"model": {
+								"$ref": "AAAAAAGVmy32rwZAhNY="
+							},
+							"subViews": [
+								{
+									"_type": "LabelView",
+									"_id": "AAAAAAGVmy32rwZDO4U=",
+									"_parent": {
+										"$ref": "AAAAAAGVmy32rwZC0I0="
+									},
+									"font": "Arial;13;0",
+									"left": 1090,
+									"top": 1136,
+									"width": 68,
+									"height": 48,
+									"text": "Üretilmiş Malzeme var mı?",
+									"wordWrap": true
+								}
+							],
+							"font": "Arial;13;0",
+							"left": 1056,
+							"top": 1112,
+							"width": 136,
+							"height": 96,
+							"nameLabel": {
+								"$ref": "AAAAAAGVmy32rwZDO4U="
+							}
+						},
+						{
+							"_type": "FCFlowView",
+							"_id": "AAAAAAGVmy5aVAZM41g=",
+							"_parent": {
+								"$ref": "AAAAAAGVmyFTPAVxDdI="
+							},
+							"model": {
+								"$ref": "AAAAAAGVmy5aUwZKSFE="
+							},
+							"subViews": [
+								{
+									"_type": "EdgeLabelView",
+									"_id": "AAAAAAGVmy5aVAZNizI=",
+									"_parent": {
+										"$ref": "AAAAAAGVmy5aVAZM41g="
+									},
+									"model": {
+										"$ref": "AAAAAAGVmy5aUwZKSFE="
+									},
+									"font": "Arial;13;0",
+									"left": 1415,
+									"top": 1087,
+									"width": 8.6708984375,
+									"height": 13,
+									"alpha": -1.262743683357117,
+									"distance": 69.26037828369117,
+									"hostEdge": {
+										"$ref": "AAAAAAGVmy5aVAZM41g="
+									},
+									"edgePosition": 1,
+									"text": "Y"
+								}
+							],
+							"font": "Arial;13;0",
+							"head": {
+								"$ref": "AAAAAAGVmy32rwZC0I0="
+							},
+							"tail": {
+								"$ref": "AAAAAAGVmyxfDAYutb0="
+							},
+							"lineStyle": 2,
+							"points": "1440:1087;1440:1160;1191:1160",
+							"nameLabel": {
+								"$ref": "AAAAAAGVmy5aVAZNizI="
+							}
+						},
+						{
+							"_type": "FCFlowView",
+							"_id": "AAAAAAGVmy9iwQZkSNw=",
+							"_parent": {
+								"$ref": "AAAAAAGVmyFTPAVxDdI="
+							},
+							"model": {
+								"$ref": "AAAAAAGVmy9iwQZibpc="
+							},
+							"subViews": [
+								{
+									"_type": "EdgeLabelView",
+									"_id": "AAAAAAGVmy9iwQZl1hY=",
+									"_parent": {
+										"$ref": "AAAAAAGVmy9iwQZkSNw="
+									},
+									"model": {
+										"$ref": "AAAAAAGVmy9iwQZibpc="
+									},
+									"font": "Arial;13;0",
+									"left": 1104,
+									"top": 960,
+									"width": 9.38818359375,
+									"height": 13,
+									"alpha": -1.660110245754969,
+									"distance": 134.5362404707371,
+									"hostEdge": {
+										"$ref": "AAAAAAGVmy9iwQZkSNw="
+									},
+									"edgePosition": 1,
+									"text": "N"
+								}
+							],
+							"font": "Arial;13;0",
+							"head": {
+								"$ref": "AAAAAAGVmyn2ugXwZjE="
+							},
+							"tail": {
+								"$ref": "AAAAAAGVmy32rwZC0I0="
+							},
+							"lineStyle": 2,
+							"points": "1120:1112;1120:832;1336:832",
+							"nameLabel": {
+								"$ref": "AAAAAAGVmy9iwQZl1hY="
+							}
+						},
+						{
+							"_type": "FCProcessView",
+							"_id": "AAAAAAGVmzEYswZ0SLk=",
+							"_parent": {
+								"$ref": "AAAAAAGVmyFTPAVxDdI="
+							},
+							"model": {
+								"$ref": "AAAAAAGVmzEYswZyIxo="
+							},
+							"subViews": [
+								{
+									"_type": "LabelView",
+									"_id": "AAAAAAGVmzEYswZ1K4o=",
+									"_parent": {
+										"$ref": "AAAAAAGVmzEYswZ0SLk="
+									},
+									"font": "Arial;13;0",
+									"left": 1018,
+									"top": 1330,
+									"width": 212,
+									"height": 26,
+									"text": "Üretilmiş malzeme toplanır. Kapasite sıfırlanır.",
+									"wordWrap": true
+								}
+							],
+							"font": "Arial;13;0",
+							"left": 1008,
+							"top": 1320,
+							"width": 232,
+							"height": 49,
+							"nameLabel": {
+								"$ref": "AAAAAAGVmzEYswZ1K4o="
+							}
+						},
+						{
+							"_type": "FCFlowView",
+							"_id": "AAAAAAGVmzOf+QaJ1W0=",
+							"_parent": {
+								"$ref": "AAAAAAGVmyFTPAVxDdI="
+							},
+							"model": {
+								"$ref": "AAAAAAGVmzOf+QaHW4k="
+							},
+							"subViews": [
+								{
+									"_type": "EdgeLabelView",
+									"_id": "AAAAAAGVmzOf+QaKOR0=",
+									"_parent": {
+										"$ref": "AAAAAAGVmzOf+QaJ1W0="
+									},
+									"model": {
+										"$ref": "AAAAAAGVmzOf+QaHW4k="
+									},
+									"font": "Arial;13;0",
+									"left": 1103,
+									"top": 1215,
+									"width": 8.6708984375,
+									"height": 13,
+									"alpha": -2.7695252818378138,
+									"distance": 44.01136216933077,
+									"hostEdge": {
+										"$ref": "AAAAAAGVmzOf+QaJ1W0="
+									},
+									"edgePosition": 1,
+									"text": "Y"
+								}
+							],
+							"font": "Arial;13;0",
+							"head": {
+								"$ref": "AAAAAAGVmzEYswZ0SLk="
+							},
+							"tail": {
+								"$ref": "AAAAAAGVmy32rwZC0I0="
+							},
+							"lineStyle": 2,
+							"points": "1123:1207;1123:1320",
+							"nameLabel": {
+								"$ref": "AAAAAAGVmzOf+QaKOR0="
+							}
+						},
+						{
+							"_type": "FCProcessView",
+							"_id": "AAAAAAGVmzPTIgaU3iA=",
+							"_parent": {
+								"$ref": "AAAAAAGVmyFTPAVxDdI="
+							},
+							"model": {
+								"$ref": "AAAAAAGVmzPTIgaS/os="
+							},
+							"subViews": [
+								{
+									"_type": "LabelView",
+									"_id": "AAAAAAGVmzPTIgaVoJ0=",
+									"_parent": {
+										"$ref": "AAAAAAGVmzPTIgaU3iA="
+									},
+									"font": "Arial;13;0",
+									"left": 1346,
+									"top": 554,
+									"width": 188,
+									"height": 78,
+									"text": "Factoryler de emir varsa üretim başlar. ** Hay Factory kapasitesi dolu olmadığı müddetçe üretmeye devam eder. Biten emirlerdeki factory ler durur.",
+									"wordWrap": true
+								}
+							],
+							"font": "Arial;13;0",
+							"left": 1336,
+							"top": 544,
+							"width": 208,
+							"height": 98,
+							"nameLabel": {
+								"$ref": "AAAAAAGVmzPTIgaVoJ0="
+							}
+						},
+						{
+							"_type": "FCFlowView",
+							"_id": "AAAAAAGVmzZI8gap9wA=",
+							"_parent": {
+								"$ref": "AAAAAAGVmyFTPAVxDdI="
+							},
+							"model": {
+								"$ref": "AAAAAAGVmzZI8gang88="
+							},
+							"subViews": [
+								{
+									"_type": "EdgeLabelView",
+									"_id": "AAAAAAGVmzZI8gaqpRs=",
+									"_parent": {
+										"$ref": "AAAAAAGVmzZI8gap9wA="
+									},
+									"model": {
+										"$ref": "AAAAAAGVmzZI8gang88="
+									},
+									"visible": false,
+									"font": "Arial;13;0",
+									"left": 1455,
+									"top": 701,
+									"height": 13,
+									"alpha": 1.5707963267948966,
+									"distance": 15,
+									"hostEdge": {
+										"$ref": "AAAAAAGVmzZI8gap9wA="
+									},
+									"edgePosition": 1
+								}
+							],
+							"font": "Arial;13;0",
+							"head": {
+								"$ref": "AAAAAAGVmyn2ugXwZjE="
+							},
+							"tail": {
+								"$ref": "AAAAAAGVmzPTIgaU3iA="
+							},
+							"lineStyle": 2,
+							"points": "1441:641;1441:776",
+							"nameLabel": {
+								"$ref": "AAAAAAGVmzZI8gaqpRs="
+							}
+						},
+						{
+							"_type": "FCProcessView",
+							"_id": "AAAAAAGVmzky8AbnGFk=",
+							"_parent": {
+								"$ref": "AAAAAAGVmyFTPAVxDdI="
+							},
+							"model": {
+								"$ref": "AAAAAAGVmzky8AblZVc="
+							},
+							"subViews": [
+								{
+									"_type": "LabelView",
+									"_id": "AAAAAAGVmzky8AboosI=",
+									"_parent": {
+										"$ref": "AAAAAAGVmzky8AbnGFk="
+									},
+									"font": "Arial;13;0",
+									"left": 1786,
+									"top": 1026,
+									"width": 244,
+									"height": 26,
+									"text": "Factory üzerinde Production butonlar açılır.",
+									"wordWrap": true
+								}
+							],
+							"font": "Arial;13;0",
+							"left": 1776,
+							"top": 1016,
+							"width": 264,
+							"height": 59,
+							"nameLabel": {
+								"$ref": "AAAAAAGVmzky8AboosI="
+							}
+						},
+						{
+							"_type": "FCFlowView",
+							"_id": "AAAAAAGVmzmdagbzlVg=",
+							"_parent": {
+								"$ref": "AAAAAAGVmyFTPAVxDdI="
+							},
+							"model": {
+								"$ref": "AAAAAAGVmzmdagbxiZg="
+							},
+							"subViews": [
+								{
+									"_type": "EdgeLabelView",
+									"_id": "AAAAAAGVmzmdagb0sac=",
+									"_parent": {
+										"$ref": "AAAAAAGVmzmdagbzlVg="
+									},
+									"model": {
+										"$ref": "AAAAAAGVmzmdagbxiZg="
+									},
+									"font": "Arial;13;0",
+									"left": 1520,
+									"top": 1019,
+									"width": 9.38818359375,
+									"height": 13,
+									"alpha": -3.2522498828937705,
+									"distance": 135.83077707206124,
+									"hostEdge": {
+										"$ref": "AAAAAAGVmzmdagbzlVg="
+									},
+									"edgePosition": 1,
+									"text": "N"
+								}
+							],
+							"font": "Arial;13;0",
+							"head": {
+								"$ref": "AAAAAAGVmzky8AbnGFk="
+							},
+							"tail": {
+								"$ref": "AAAAAAGVmyxfDAYutb0="
+							},
+							"lineStyle": 2,
+							"points": "1543:1041;1776:1041",
+							"nameLabel": {
+								"$ref": "AAAAAAGVmzmdagb0sac="
+							}
+						},
+						{
+							"_type": "FCDecisionView",
+							"_id": "AAAAAAGVmzrA2gcFlYE=",
+							"_parent": {
+								"$ref": "AAAAAAGVmyFTPAVxDdI="
+							},
+							"model": {
+								"$ref": "AAAAAAGVmzrA2gcDPn0="
+							},
+							"subViews": [
+								{
+									"_type": "LabelView",
+									"_id": "AAAAAAGVmzrA2gcGYnA=",
+									"_parent": {
+										"$ref": "AAAAAAGVmzrA2gcFlYE="
+									},
+									"font": "Arial;13;0",
+									"left": 1848,
+									"top": 1264,
+									"width": 112,
+									"height": 64,
+									"text": " Production butonlara tıklandı mı?",
+									"wordWrap": true
+								}
+							],
+							"font": "Arial;13;0",
+							"left": 1792,
+							"top": 1232,
+							"width": 224,
+							"height": 128,
+							"nameLabel": {
+								"$ref": "AAAAAAGVmzrA2gcGYnA="
+							}
+						},
+						{
+							"_type": "FCFlowView",
+							"_id": "AAAAAAGVmzsmiwcQVfw=",
+							"_parent": {
+								"$ref": "AAAAAAGVmyFTPAVxDdI="
+							},
+							"model": {
+								"$ref": "AAAAAAGVmzsmiwcOiSs="
+							},
+							"subViews": [
+								{
+									"_type": "EdgeLabelView",
+									"_id": "AAAAAAGVmzsmjAcR+k0=",
+									"_parent": {
+										"$ref": "AAAAAAGVmzsmiwcQVfw="
+									},
+									"model": {
+										"$ref": "AAAAAAGVmzsmiwcOiSs="
+									},
+									"visible": false,
+									"font": "Arial;13;0",
+									"left": 1922,
+									"top": 1146,
+									"height": 13,
+									"alpha": 1.5707963267948966,
+									"distance": 15,
+									"hostEdge": {
+										"$ref": "AAAAAAGVmzsmiwcQVfw="
+									},
+									"edgePosition": 1
+								}
+							],
+							"font": "Arial;13;0",
+							"head": {
+								"$ref": "AAAAAAGVmzrA2gcFlYE="
+							},
+							"tail": {
+								"$ref": "AAAAAAGVmzky8AbnGFk="
+							},
+							"lineStyle": 2,
+							"points": "1908:1074;1908:1232",
+							"nameLabel": {
+								"$ref": "AAAAAAGVmzsmjAcR+k0="
+							}
+						},
+						{
+							"_type": "FCDecisionView",
+							"_id": "AAAAAAGVmzwlIwcs664=",
+							"_parent": {
+								"$ref": "AAAAAAGVmyFTPAVxDdI="
+							},
+							"model": {
+								"$ref": "AAAAAAGVmzwlIwcqzoY="
+							},
+							"subViews": [
+								{
+									"_type": "LabelView",
+									"_id": "AAAAAAGVmzwlIwctBeQ=",
+									"_parent": {
+										"$ref": "AAAAAAGVmzwlIwcs664="
+									},
+									"font": "Arial;13;0",
+									"left": 2298,
+									"top": 1268,
+									"width": 116,
+									"height": 56,
+									"text": "Factory Üzerine mi Tıklandı",
+									"wordWrap": true
+								}
+							],
+							"font": "Arial;13;0",
+							"left": 2240,
+							"top": 1240,
+							"width": 232,
+							"height": 112,
+							"nameLabel": {
+								"$ref": "AAAAAAGVmzwlIwctBeQ="
+							}
+						},
+						{
+							"_type": "FCFlowView",
+							"_id": "AAAAAAGVmzxwjwc2Iyk=",
+							"_parent": {
+								"$ref": "AAAAAAGVmyFTPAVxDdI="
+							},
+							"model": {
+								"$ref": "AAAAAAGVmzxwjwc04L0="
+							},
+							"subViews": [
+								{
+									"_type": "EdgeLabelView",
+									"_id": "AAAAAAGVmzxwjwc3vh0=",
+									"_parent": {
+										"$ref": "AAAAAAGVmzxwjwc2Iyk="
+									},
+									"model": {
+										"$ref": "AAAAAAGVmzxwjwc04L0="
+									},
+									"font": "Arial;13;0",
+									"left": 2062,
+									"top": 1278,
+									"width": 9.38818359375,
+									"height": 13,
+									"alpha": 2.9791032398009856,
+									"distance": 61.814237842102365,
+									"hostEdge": {
+										"$ref": "AAAAAAGVmzxwjwc2Iyk="
+									},
+									"edgePosition": 1,
+									"text": "N"
+								}
+							],
+							"font": "Arial;13;0",
+							"head": {
+								"$ref": "AAAAAAGVmzwlIwcs664="
+							},
+							"tail": {
+								"$ref": "AAAAAAGVmzrA2gcFlYE="
+							},
+							"lineStyle": 2,
+							"points": "2015:1295;2240:1295",
+							"nameLabel": {
+								"$ref": "AAAAAAGVmzxwjwc3vh0="
+							}
+						},
+						{
+							"_type": "FCFlowView",
+							"_id": "AAAAAAGVm0DY4weVgY8=",
+							"_parent": {
+								"$ref": "AAAAAAGVmyFTPAVxDdI="
+							},
+							"model": {
+								"$ref": "AAAAAAGVm0DY4weTKks="
+							},
+							"subViews": [
+								{
+									"_type": "EdgeLabelView",
+									"_id": "AAAAAAGVm0DY4weWUno=",
+									"_parent": {
+										"$ref": "AAAAAAGVm0DY4weVgY8="
+									},
+									"model": {
+										"$ref": "AAAAAAGVm0DY4weTKks="
+									},
+									"visible": false,
+									"font": "Arial;13;0",
+									"left": 969,
+									"top": 1073,
+									"height": 13,
+									"alpha": 1.5707963267948966,
+									"distance": 15,
+									"hostEdge": {
+										"$ref": "AAAAAAGVm0DY4weVgY8="
+									},
+									"edgePosition": 1
+								}
+							],
+							"font": "Arial;13;0",
+							"head": {
+								"$ref": "AAAAAAGVmyn2ugXwZjE="
+							},
+							"tail": {
+								"$ref": "AAAAAAGVmzEYswZ0SLk="
+							},
+							"lineStyle": 2,
+							"points": "1008:1344;984:1344;984:816;1336:816",
+							"nameLabel": {
+								"$ref": "AAAAAAGVm0DY4weWUno="
+							}
+						},
+						{
+							"_type": "FCDecisionView",
+							"_id": "AAAAAAGVm0HGSgewkew=",
+							"_parent": {
+								"$ref": "AAAAAAGVmyFTPAVxDdI="
+							},
+							"model": {
+								"$ref": "AAAAAAGVm0HGSgeuNdA="
+							},
+							"subViews": [
+								{
+									"_type": "LabelView",
+									"_id": "AAAAAAGVm0HGSgexuko=",
+									"_parent": {
+										"$ref": "AAAAAAGVm0HGSgewkew="
+									},
+									"font": "Arial;13;0",
+									"left": 2570,
+									"top": 1272,
+									"width": 68,
+									"height": 48,
+									"text": "Üretilmiş Malzeme var mı?",
+									"wordWrap": true
+								}
+							],
+							"font": "Arial;13;0",
+							"left": 2536,
+							"top": 1248,
+							"width": 136,
+							"height": 96,
+							"nameLabel": {
+								"$ref": "AAAAAAGVm0HGSgexuko="
+							}
+						},
+						{
+							"_type": "FCFlowView",
+							"_id": "AAAAAAGVm0I3Ywe8tRw=",
+							"_parent": {
+								"$ref": "AAAAAAGVmyFTPAVxDdI="
+							},
+							"model": {
+								"$ref": "AAAAAAGVm0I3Yge6fY0="
+							},
+							"subViews": [
+								{
+									"_type": "EdgeLabelView",
+									"_id": "AAAAAAGVm0I3Ywe9yBM=",
+									"_parent": {
+										"$ref": "AAAAAAGVm0I3Ywe8tRw="
+									},
+									"model": {
+										"$ref": "AAAAAAGVm0I3Yge6fY0="
+									},
+									"font": "Arial;13;0",
+									"left": 2499,
+									"top": 1274,
+									"width": 8.6708984375,
+									"height": 13,
+									"alpha": 1.5707963267948966,
+									"distance": 15,
+									"hostEdge": {
+										"$ref": "AAAAAAGVm0I3Ywe8tRw="
+									},
+									"edgePosition": 1,
+									"text": "Y"
+								}
+							],
+							"font": "Arial;13;0",
+							"head": {
+								"$ref": "AAAAAAGVm0HGSgewkew="
+							},
+							"tail": {
+								"$ref": "AAAAAAGVmzwlIwcs664="
+							},
+							"lineStyle": 2,
+							"points": "2471:1295;2536:1295",
+							"nameLabel": {
+								"$ref": "AAAAAAGVm0I3Ywe9yBM="
+							}
+						},
+						{
+							"_type": "FCProcessView",
+							"_id": "AAAAAAGVm0KW6wfKnAs=",
+							"_parent": {
+								"$ref": "AAAAAAGVmyFTPAVxDdI="
+							},
+							"model": {
+								"$ref": "AAAAAAGVm0KW6wfI84Q="
+							},
+							"subViews": [
+								{
+									"_type": "LabelView",
+									"_id": "AAAAAAGVm0KW6wfLWuk=",
+									"_parent": {
+										"$ref": "AAAAAAGVm0KW6wfKnAs="
+									},
+									"font": "Arial;13;0",
+									"left": 2794,
+									"top": 1266,
+									"width": 212,
+									"height": 26,
+									"text": "Üretilmiş malzeme toplanır. Kapasite sıfırlanır.",
+									"wordWrap": true
+								}
+							],
+							"font": "Arial;13;0",
+							"left": 2784,
+							"top": 1256,
+							"width": 232,
+							"height": 72,
+							"nameLabel": {
+								"$ref": "AAAAAAGVm0KW6wfLWuk="
+							}
+						},
+						{
+							"_type": "FCFlowView",
+							"_id": "AAAAAAGVm0LtegfYJjs=",
+							"_parent": {
+								"$ref": "AAAAAAGVmyFTPAVxDdI="
+							},
+							"model": {
+								"$ref": "AAAAAAGVm0LtegfWnNk="
+							},
+							"subViews": [
+								{
+									"_type": "EdgeLabelView",
+									"_id": "AAAAAAGVm0LtegfZ7jI=",
+									"_parent": {
+										"$ref": "AAAAAAGVm0LtegfYJjs="
+									},
+									"model": {
+										"$ref": "AAAAAAGVm0LtegfWnNk="
+									},
+									"font": "Arial;13;0",
+									"left": 2723,
+									"top": 1270,
+									"width": 8.6708984375,
+									"height": 13,
+									"alpha": 1.5707963267948966,
+									"distance": 15,
+									"hostEdge": {
+										"$ref": "AAAAAAGVm0LtegfYJjs="
+									},
+									"edgePosition": 1,
+									"text": "Y"
+								}
+							],
+							"font": "Arial;13;0",
+							"head": {
+								"$ref": "AAAAAAGVm0KW6wfKnAs="
+							},
+							"tail": {
+								"$ref": "AAAAAAGVm0HGSgewkew="
+							},
+							"lineStyle": 2,
+							"points": "2671:1291;2784:1291",
+							"nameLabel": {
+								"$ref": "AAAAAAGVm0LtegfZ7jI="
+							}
+						},
+						{
+							"_type": "FCProcessView",
+							"_id": "AAAAAAGVm0TYCQgDCYE=",
+							"_parent": {
+								"$ref": "AAAAAAGVmyFTPAVxDdI="
+							},
+							"model": {
+								"$ref": "AAAAAAGVm0TYCQgB2+4="
+							},
+							"subViews": [
+								{
+									"_type": "LabelView",
+									"_id": "AAAAAAGVm0TYCQgEerE=",
+									"_parent": {
+										"$ref": "AAAAAAGVm0TYCQgDCYE="
+									},
+									"font": "Arial;13;0",
+									"left": 2266,
+									"top": 1026,
+									"width": 188,
+									"height": 26,
+									"text": "Factory üzerinde Production butonlar kapanır",
+									"wordWrap": true
+								}
+							],
+							"font": "Arial;13;0",
+							"left": 2256,
+							"top": 1016,
+							"width": 208,
+							"height": 80,
+							"nameLabel": {
+								"$ref": "AAAAAAGVm0TYCQgEerE="
+							}
+						},
+						{
+							"_type": "FCFlowView",
+							"_id": "AAAAAAGVm0VpHwgYD6o=",
+							"_parent": {
+								"$ref": "AAAAAAGVmyFTPAVxDdI="
+							},
+							"model": {
+								"$ref": "AAAAAAGVm0VpHggWQ04="
+							},
+							"subViews": [
+								{
+									"_type": "EdgeLabelView",
+									"_id": "AAAAAAGVm0VpHwgZNNk=",
+									"_parent": {
+										"$ref": "AAAAAAGVm0VpHwgYD6o="
+									},
+									"model": {
+										"$ref": "AAAAAAGVm0VpHggWQ04="
+									},
+									"visible": false,
+									"font": "Arial;13;0",
+									"left": 2359,
+									"top": 595,
+									"height": 13,
+									"alpha": 1.5707963267948966,
+									"distance": 15,
+									"hostEdge": {
+										"$ref": "AAAAAAGVm0VpHwgYD6o="
+									},
+									"edgePosition": 1
+								}
+							],
+							"font": "Arial;13;0",
+							"head": {
+								"$ref": "AAAAAAGVmzPTIgaU3iA="
+							},
+							"tail": {
+								"$ref": "AAAAAAGVm0TYCQgDCYE="
+							},
+							"lineStyle": 2,
+							"points": "2360:1016;2360:586;1543:586",
+							"nameLabel": {
+								"$ref": "AAAAAAGVm0VpHwgZNNk="
+							}
+						},
+						{
+							"_type": "FCFlowView",
+							"_id": "AAAAAAGVm0qHpwio/TA=",
+							"_parent": {
+								"$ref": "AAAAAAGVmyFTPAVxDdI="
+							},
+							"model": {
+								"$ref": "AAAAAAGVm0qHpwimot4="
+							},
+							"subViews": [
+								{
+									"_type": "EdgeLabelView",
+									"_id": "AAAAAAGVm0qHpwiplNU=",
+									"_parent": {
+										"$ref": "AAAAAAGVm0qHpwio/TA="
+									},
+									"model": {
+										"$ref": "AAAAAAGVm0qHpwimot4="
+									},
+									"font": "Arial;13;0",
+									"left": 2336,
+									"top": 1192,
+									"width": 9.38818359375,
+									"height": 13,
+									"alpha": -3.6676586924524974,
+									"distance": 35.84689665786984,
+									"hostEdge": {
+										"$ref": "AAAAAAGVm0qHpwio/TA="
+									},
+									"edgePosition": 1,
+									"text": "N"
+								}
+							],
+							"font": "Arial;13;0",
+							"head": {
+								"$ref": "AAAAAAGVm0TYCQgDCYE="
+							},
+							"tail": {
+								"$ref": "AAAAAAGVmzwlIwcs664="
+							},
+							"lineStyle": 2,
+							"points": "2358:1240;2358:1095",
+							"nameLabel": {
+								"$ref": "AAAAAAGVm0qHpwiplNU="
+							}
+						},
+						{
+							"_type": "FCFlowView",
+							"_id": "AAAAAAGVm0ri8Qi1PVY=",
+							"_parent": {
+								"$ref": "AAAAAAGVmyFTPAVxDdI="
+							},
+							"model": {
+								"$ref": "AAAAAAGVm0ri8QizEq0="
+							},
+							"subViews": [
+								{
+									"_type": "EdgeLabelView",
+									"_id": "AAAAAAGVm0ri8Qi2OEw=",
+									"_parent": {
+										"$ref": "AAAAAAGVm0ri8Qi1PVY="
+									},
+									"model": {
+										"$ref": "AAAAAAGVm0ri8QizEq0="
+									},
+									"font": "Arial;13;0",
+									"left": 2607,
+									"top": 1351,
+									"width": 9.38818359375,
+									"height": 13,
+									"alpha": -1.5143345389097818,
+									"distance": 460.7341966904562,
+									"hostEdge": {
+										"$ref": "AAAAAAGVm0ri8Qi1PVY="
+									},
+									"edgePosition": 1,
+									"text": "N"
+								}
+							],
+							"font": "Arial;13;0",
+							"head": {
+								"$ref": "AAAAAAGVmzrA2gcFlYE="
+							},
+							"tail": {
+								"$ref": "AAAAAAGVm0HGSgewkew="
+							},
+							"lineStyle": 2,
+							"points": "2600:1343;2600:1384;2152:1384;2152:1304;2015:1304",
+							"nameLabel": {
+								"$ref": "AAAAAAGVm0ri8Qi2OEw="
+							}
+						},
+						{
+							"_type": "FCFlowView",
+							"_id": "AAAAAAGVm0s7RwjEfM8=",
+							"_parent": {
+								"$ref": "AAAAAAGVmyFTPAVxDdI="
+							},
+							"model": {
+								"$ref": "AAAAAAGVm0s7RwjCGlw="
+							},
+							"subViews": [
+								{
+									"_type": "EdgeLabelView",
+									"_id": "AAAAAAGVm0s7SAjFEZQ=",
+									"_parent": {
+										"$ref": "AAAAAAGVm0s7RwjEfM8="
+									},
+									"model": {
+										"$ref": "AAAAAAGVm0s7RwjCGlw="
+									},
+									"visible": false,
+									"font": "Arial;13;0",
+									"left": 2081,
+									"top": 1433,
+									"height": 13,
+									"alpha": 1.5707963267948966,
+									"distance": 15,
+									"hostEdge": {
+										"$ref": "AAAAAAGVm0s7RwjEfM8="
+									},
+									"edgePosition": 1
+								}
+							],
+							"font": "Arial;13;0",
+							"head": {
+								"$ref": "AAAAAAGVmzrA2gcFlYE="
+							},
+							"tail": {
+								"$ref": "AAAAAAGVm0KW6wfKnAs="
+							},
+							"lineStyle": 2,
+							"points": "2904:1327;2904:1440;2096:1440;2096:1312;2015:1312",
+							"nameLabel": {
+								"$ref": "AAAAAAGVm0s7SAjFEZQ="
+							}
+						},
+						{
+							"_type": "UMLNoteView",
+							"_id": "AAAAAAGVm01eLgjV5DU=",
+							"_parent": {
+								"$ref": "AAAAAAGVmyFTPAVxDdI="
+							},
+							"font": "Arial;13;0",
+							"left": 1760,
+							"top": 832,
+							"width": 289,
+							"height": 120,
+							"text": "** Harcanabilecek malzeme ve emir kapasitesine göre emir ver butonu aktif edilir. \n\n**Eğer aktif emir varsa emirden çıkar butonu aktif edilir."
+						},
+						{
+							"_type": "UMLNoteLinkView",
+							"_id": "AAAAAAGVm01eMgjYqJU=",
+							"_parent": {
+								"$ref": "AAAAAAGVmyFTPAVxDdI="
+							},
+							"font": "Arial;13;0",
+							"head": {
+								"$ref": "AAAAAAGVm01eLgjV5DU="
+							},
+							"tail": {
+								"$ref": "AAAAAAGVmzky8AbnGFk="
+							},
+							"lineStyle": 1,
+							"points": "1906:1015;1905:952"
+						},
+						{
+							"_type": "FCDecisionView",
+							"_id": "AAAAAAGVm1VkYAj1YtM=",
+							"_parent": {
+								"$ref": "AAAAAAGVmyFTPAVxDdI="
+							},
+							"model": {
+								"$ref": "AAAAAAGVm1VkYAjzMGg="
+							},
+							"subViews": [
+								{
+									"_type": "LabelView",
+									"_id": "AAAAAAGVm1VkYAj2Ql0=",
+									"_parent": {
+										"$ref": "AAAAAAGVm1VkYAj1YtM="
+									},
+									"font": "Arial;13;0",
+									"left": 1858,
+									"top": 1508,
+									"width": 84,
+									"height": 56,
+									"text": "Buton aktif mi?",
+									"wordWrap": true
+								}
+							],
+							"font": "Arial;13;0",
+							"left": 1816,
+							"top": 1480,
+							"width": 168,
+							"height": 112,
+							"nameLabel": {
+								"$ref": "AAAAAAGVm1VkYAj2Ql0="
+							}
+						},
+						{
+							"_type": "FCFlowView",
+							"_id": "AAAAAAGVm1WnJwkBh/E=",
+							"_parent": {
+								"$ref": "AAAAAAGVmyFTPAVxDdI="
+							},
+							"model": {
+								"$ref": "AAAAAAGVm1WnJwj/GOI="
+							},
+							"subViews": [
+								{
+									"_type": "EdgeLabelView",
+									"_id": "AAAAAAGVm1WnJwkCGsY=",
+									"_parent": {
+										"$ref": "AAAAAAGVm1WnJwkBh/E="
+									},
+									"model": {
+										"$ref": "AAAAAAGVm1WnJwj/GOI="
+									},
+									"font": "Arial;13;0",
+									"left": 1784,
+									"top": 1511,
+									"width": 9.38818359375,
+									"height": 13,
+									"alpha": -2.6265196844780236,
+									"distance": 121.8031198286809,
+									"hostEdge": {
+										"$ref": "AAAAAAGVm1WnJwkBh/E="
+									},
+									"edgePosition": 1,
+									"text": "N"
+								}
+							],
+							"font": "Arial;13;0",
+							"head": {
+								"$ref": "AAAAAAGVmzrA2gcFlYE="
+							},
+							"tail": {
+								"$ref": "AAAAAAGVm1VkYAj1YtM="
+							},
+							"lineStyle": 2,
+							"points": "1816:1536;1728:1536;1728:1288;1792:1288",
+							"nameLabel": {
+								"$ref": "AAAAAAGVm1WnJwkCGsY="
+							}
+						},
+						{
+							"_type": "FCFlowView",
+							"_id": "AAAAAAGVm1XZzQkP7Nc=",
+							"_parent": {
+								"$ref": "AAAAAAGVmyFTPAVxDdI="
+							},
+							"model": {
+								"$ref": "AAAAAAGVm1XZzQkNh6M="
+							},
+							"subViews": [
+								{
+									"_type": "EdgeLabelView",
+									"_id": "AAAAAAGVm1XZzQkQR2M=",
+									"_parent": {
+										"$ref": "AAAAAAGVm1XZzQkP7Nc="
+									},
+									"model": {
+										"$ref": "AAAAAAGVm1XZzQkNh6M="
+									},
+									"font": "Arial;13;0",
+									"left": 1879,
+									"top": 1375,
+									"width": 8.6708984375,
+									"height": 13,
+									"alpha": -2.6671931486051674,
+									"distance": 41.593268686170845,
+									"hostEdge": {
+										"$ref": "AAAAAAGVm1XZzQkP7Nc="
+									},
+									"edgePosition": 1,
+									"text": "Y"
+								}
+							],
+							"font": "Arial;13;0",
+							"head": {
+								"$ref": "AAAAAAGVm1VkYAj1YtM="
+							},
+							"tail": {
+								"$ref": "AAAAAAGVmzrA2gcFlYE="
+							},
+							"lineStyle": 2,
+							"points": "1902:1359;1902:1480",
+							"nameLabel": {
+								"$ref": "AAAAAAGVm1XZzQkQR2M="
+							}
+						},
+						{
+							"_type": "FCDecisionView",
+							"_id": "AAAAAAGVm1aEjgkaLHE=",
+							"_parent": {
+								"$ref": "AAAAAAGVmyFTPAVxDdI="
+							},
+							"model": {
+								"$ref": "AAAAAAGVm1aEjgkYyJY="
+							},
+							"subViews": [
+								{
+									"_type": "LabelView",
+									"_id": "AAAAAAGVm1aEjgkb+XM=",
+									"_parent": {
+										"$ref": "AAAAAAGVm1aEjgkaLHE="
+									},
+									"font": "Arial;13;0",
+									"left": 1844.25,
+									"top": 1738.25,
+									"width": 104.5,
+									"height": 68.5,
+									"text": "Emir ver butonuna mı tıklandı?",
+									"wordWrap": true
+								}
+							],
+							"font": "Arial;13;0",
+							"left": 1792,
+							"top": 1704,
+							"width": 209,
+							"height": 137,
+							"nameLabel": {
+								"$ref": "AAAAAAGVm1aEjgkb+XM="
+							}
+						},
+						{
+							"_type": "FCFlowView",
+							"_id": "AAAAAAGVm1bm1AkoVW8=",
+							"_parent": {
+								"$ref": "AAAAAAGVmyFTPAVxDdI="
+							},
+							"model": {
+								"$ref": "AAAAAAGVm1bm1Akm2RM="
+							},
+							"subViews": [
+								{
+									"_type": "EdgeLabelView",
+									"_id": "AAAAAAGVm1bm1Akpips=",
+									"_parent": {
+										"$ref": "AAAAAAGVm1bm1AkoVW8="
+									},
+									"model": {
+										"$ref": "AAAAAAGVm1bm1Akm2RM="
+									},
+									"font": "Arial;13;0",
+									"left": 1903,
+									"top": 1608,
+									"width": 8.6708984375,
+									"height": 13,
+									"alpha": 2.8753401469490107,
+									"distance": 34.20526275297414,
+									"hostEdge": {
+										"$ref": "AAAAAAGVm1bm1AkoVW8="
+									},
+									"edgePosition": 1,
+									"text": "Y"
+								}
+							],
+							"font": "Arial;13;0",
+							"head": {
+								"$ref": "AAAAAAGVm1aEjgkaLHE="
+							},
+							"tail": {
+								"$ref": "AAAAAAGVm1VkYAj1YtM="
+							},
+							"lineStyle": 2,
+							"points": "1898:1591;1898:1704",
+							"nameLabel": {
+								"$ref": "AAAAAAGVm1bm1Akpips="
+							}
+						},
+						{
+							"_type": "FCProcessView",
+							"_id": "AAAAAAGVm1lHywkylEU=",
+							"_parent": {
+								"$ref": "AAAAAAGVmyFTPAVxDdI="
+							},
+							"model": {
+								"$ref": "AAAAAAGVm1lHywkwQkI="
+							},
+							"subViews": [
+								{
+									"_type": "LabelView",
+									"_id": "AAAAAAGVm1lHywkzwK4=",
+									"_parent": {
+										"$ref": "AAAAAAGVm1lHywkylEU="
+									},
+									"font": "Arial;13;0",
+									"left": 2130,
+									"top": 1754,
+									"width": 196,
+									"height": 52,
+									"text": "Üretim için gerekli malzeme 1 düşer. Emir sayısı 1 artar. Emir verebilme durumuna göre buton aktifliği değişebilir.",
+									"wordWrap": true
+								}
+							],
+							"font": "Arial;13;0",
+							"left": 2120,
+							"top": 1744,
+							"width": 216,
+							"height": 80,
+							"nameLabel": {
+								"$ref": "AAAAAAGVm1lHywkzwK4="
+							}
+						},
+						{
+							"_type": "FCFlowView",
+							"_id": "AAAAAAGVm1ti8AlXu4c=",
+							"_parent": {
+								"$ref": "AAAAAAGVmyFTPAVxDdI="
+							},
+							"model": {
+								"$ref": "AAAAAAGVm1ti8AlVRno="
+							},
+							"subViews": [
+								{
+									"_type": "EdgeLabelView",
+									"_id": "AAAAAAGVm1ti8AlYC3M=",
+									"_parent": {
+										"$ref": "AAAAAAGVm1ti8AlXu4c="
+									},
+									"model": {
+										"$ref": "AAAAAAGVm1ti8AlVRno="
+									},
+									"font": "Arial;13;0",
+									"left": 2015,
+									"top": 1759,
+									"width": 8.6708984375,
+									"height": 13,
+									"alpha": -3.4486384558788696,
+									"distance": 43.01162633521314,
+									"hostEdge": {
+										"$ref": "AAAAAAGVm1ti8AlXu4c="
+									},
+									"edgePosition": 1,
+									"text": "Y"
+								}
+							],
+							"font": "Arial;13;0",
+							"head": {
+								"$ref": "AAAAAAGVm1lHywkylEU="
+							},
+							"tail": {
+								"$ref": "AAAAAAGVm1aEjgkaLHE="
+							},
+							"lineStyle": 2,
+							"points": "2000:1779;2120:1779",
+							"nameLabel": {
+								"$ref": "AAAAAAGVm1ti8AlYC3M="
+							}
+						},
+						{
+							"_type": "FCFlowView",
+							"_id": "AAAAAAGVm1t8uAlg9V0=",
+							"_parent": {
+								"$ref": "AAAAAAGVmyFTPAVxDdI="
+							},
+							"model": {
+								"$ref": "AAAAAAGVm1t8uAleHA0="
+							},
+							"subViews": [
+								{
+									"_type": "EdgeLabelView",
+									"_id": "AAAAAAGVm1t8uAlhdU4=",
+									"_parent": {
+										"$ref": "AAAAAAGVm1t8uAlg9V0="
+									},
+									"model": {
+										"$ref": "AAAAAAGVm1t8uAleHA0="
+									},
+									"visible": false,
+									"font": "Arial;13;0",
+									"left": 2239,
+									"top": 1545,
+									"height": 13,
+									"alpha": 1.5707963267948966,
+									"distance": 15,
+									"hostEdge": {
+										"$ref": "AAAAAAGVm1t8uAlg9V0="
+									},
+									"edgePosition": 1
+								}
+							],
+							"font": "Arial;13;0",
+							"head": {
+								"$ref": "AAAAAAGVm1VkYAj1YtM="
+							},
+							"tail": {
+								"$ref": "AAAAAAGVm1lHywkylEU="
+							},
+							"lineStyle": 2,
+							"points": "2240:1744;2240:1536;1983:1536",
+							"nameLabel": {
+								"$ref": "AAAAAAGVm1t8uAlhdU4="
+							}
+						},
+						{
+							"_type": "FCProcessView",
+							"_id": "AAAAAAGVm1wnaAlrRH4=",
+							"_parent": {
+								"$ref": "AAAAAAGVmyFTPAVxDdI="
+							},
+							"model": {
+								"$ref": "AAAAAAGVm1wnaAlpamA="
+							},
+							"subViews": [
+								{
+									"_type": "LabelView",
+									"_id": "AAAAAAGVm1wnaAls0+c=",
+									"_parent": {
+										"$ref": "AAAAAAGVm1wnaAlrRH4="
+									},
+									"font": "Arial;13;0",
+									"left": 1794,
+									"top": 1954,
+									"width": 228,
+									"height": 52,
+									"text": "Emir Sayısı azalır. üretim için gerekli olan malzeme iade edilir. Eğer üretimde bir emir kalmaz ise timer durur ve emir ver butonu inaktif olur",
+									"wordWrap": true
+								}
+							],
+							"font": "Arial;13;0",
+							"left": 1784,
+							"top": 1944,
+							"width": 248,
+							"height": 104,
+							"nameLabel": {
+								"$ref": "AAAAAAGVm1wnaAls0+c="
+							}
+						},
+						{
+							"_type": "FCFlowView",
+							"_id": "AAAAAAGVm14DMgl0a6Y=",
+							"_parent": {
+								"$ref": "AAAAAAGVmyFTPAVxDdI="
+							},
+							"model": {
+								"$ref": "AAAAAAGVm14DMgly2qU="
+							},
+							"subViews": [
+								{
+									"_type": "EdgeLabelView",
+									"_id": "AAAAAAGVm14DMgl1ylo=",
+									"_parent": {
+										"$ref": "AAAAAAGVm14DMgl0a6Y="
+									},
+									"model": {
+										"$ref": "AAAAAAGVm14DMgly2qU="
+									},
+									"font": "Arial;13;0",
+									"left": 1912,
+									"top": 1848,
+									"width": 9.38818359375,
+									"height": 13,
+									"alpha": 2.7886018417478935,
+									"distance": 40.496913462633174,
+									"hostEdge": {
+										"$ref": "AAAAAAGVm14DMgl0a6Y="
+									},
+									"edgePosition": 1,
+									"text": "N"
+								}
+							],
+							"font": "Arial;13;0",
+							"head": {
+								"$ref": "AAAAAAGVm1wnaAlrRH4="
+							},
+							"tail": {
+								"$ref": "AAAAAAGVm1aEjgkaLHE="
+							},
+							"lineStyle": 2,
+							"points": "1902:1840;1902:1944",
+							"nameLabel": {
+								"$ref": "AAAAAAGVm14DMgl1ylo="
+							}
+						},
+						{
+							"_type": "FCFlowView",
+							"_id": "AAAAAAGVm14O2Al9h7Y=",
+							"_parent": {
+								"$ref": "AAAAAAGVmyFTPAVxDdI="
+							},
+							"model": {
+								"$ref": "AAAAAAGVm14O2Al7C1o="
+							},
+							"subViews": [
+								{
+									"_type": "EdgeLabelView",
+									"_id": "AAAAAAGVm14O2Al+2kg=",
+									"_parent": {
+										"$ref": "AAAAAAGVm14O2Al9h7Y="
+									},
+									"model": {
+										"$ref": "AAAAAAGVm14O2Al7C1o="
+									},
+									"visible": false,
+									"font": "Arial;13;0",
+									"left": 1713,
+									"top": 1769,
+									"height": 13,
+									"alpha": 1.5707963267948966,
+									"distance": 15,
+									"hostEdge": {
+										"$ref": "AAAAAAGVm14O2Al9h7Y="
+									},
+									"edgePosition": 1
+								}
+							],
+							"font": "Arial;13;0",
+							"head": {
+								"$ref": "AAAAAAGVm1VkYAj1YtM="
+							},
+							"tail": {
+								"$ref": "AAAAAAGVm1wnaAlrRH4="
+							},
+							"lineStyle": 2,
+							"points": "1784:2008;1728:2008;1728:1544;1816:1544",
+							"nameLabel": {
+								"$ref": "AAAAAAGVm14O2Al+2kg="
+							}
+						},
+						{
+							"_type": "UMLNoteView",
+							"_id": "AAAAAAGVm2xeKQmsLe4=",
+							"_parent": {
+								"$ref": "AAAAAAGVmyFTPAVxDdI="
+							},
+							"font": "Arial;13;0",
+							"left": 2120,
+							"top": 1936,
+							"width": 217,
+							"height": 113,
+							"text": "Eğer emir ver butonu aktif değilse aktif olur."
+						},
+						{
+							"_type": "UMLNoteLinkView",
+							"_id": "AAAAAAGVm2xeLwmvQGg=",
+							"_parent": {
+								"$ref": "AAAAAAGVmyFTPAVxDdI="
+							},
+							"font": "Arial;13;0",
+							"head": {
+								"$ref": "AAAAAAGVm2xeKQmsLe4="
+							},
+							"tail": {
+								"$ref": "AAAAAAGVm1wnaAlrRH4="
+							},
+							"lineStyle": 1,
+							"points": "2032:1994;2119:1993"
+						},
+						{
+							"_type": "UMLNoteView",
+							"_id": "AAAAAAGVm4rSLgm8eNw=",
+							"_parent": {
+								"$ref": "AAAAAAGVmyFTPAVxDdI="
+							},
+							"font": "Arial;13;0",
+							"left": 1200,
+							"top": 976,
+							"width": 100,
+							"height": 142,
+							"text": "Buradaki ham madde Hay Factory için yazıldı. İlerleyen zamanlarda farklı hammade üreten factory ler olabilir."
+						},
+						{
+							"_type": "UMLNoteLinkView",
+							"_id": "AAAAAAGVm4rSNgm/1aA=",
+							"_parent": {
+								"$ref": "AAAAAAGVmyFTPAVxDdI="
+							},
+							"font": "Arial;13;0",
+							"head": {
+								"$ref": "AAAAAAGVm4rSLgm8eNw="
+							},
+							"tail": {
+								"$ref": "AAAAAAGVmyxfDAYutb0="
+							},
+							"lineStyle": 1,
+							"points": "1343:1043;1300:1044"
+						}
+					]
+				},
+				{
+					"_type": "FCTerminator",
+					"_id": "AAAAAAGVmyLwIwWESdA=",
+					"_parent": {
+						"$ref": "AAAAAAGVmyFTPAVw1EY="
+					},
+					"name": "Start",
+					"ownedElements": [
+						{
+							"_type": "FCFlow",
+							"_id": "AAAAAAGVmyhbEwXkKTc=",
+							"_parent": {
+								"$ref": "AAAAAAGVmyLwIwWESdA="
+							},
+							"source": {
+								"$ref": "AAAAAAGVmyLwIwWESdA="
+							},
+							"target": {
+								"$ref": "AAAAAAGVmyYPqQXNduQ="
+							}
+						}
+					]
+				},
+				{
+					"_type": "FCProcess",
+					"_id": "AAAAAAGVmyYPqQXNduQ=",
+					"_parent": {
+						"$ref": "AAAAAAGVmyFTPAVw1EY="
+					},
+					"name": "Save Dosyasına Göre Zaman Kontrolü",
+					"ownedElements": [
+						{
+							"_type": "FCFlow",
+							"_id": "AAAAAAGVmysFKwX/Y80=",
+							"_parent": {
+								"$ref": "AAAAAAGVmyYPqQXNduQ="
+							},
+							"source": {
+								"$ref": "AAAAAAGVmyYPqQXNduQ="
+							},
+							"target": {
+								"$ref": "AAAAAAGVmzPTIgaS/os="
+							}
+						}
+					]
+				},
+				{
+					"_type": "FCDecision",
+					"_id": "AAAAAAGVmyn2ugXuTgU=",
+					"_parent": {
+						"$ref": "AAAAAAGVmyFTPAVw1EY="
+					},
+					"name": "Herhangi bir factorye tıklandı mı?",
+					"ownedElements": [
+						{
+							"_type": "FCFlow",
+							"_id": "AAAAAAGVmytf8wYX1+k=",
+							"_parent": {
+								"$ref": "AAAAAAGVmyn2ugXuTgU="
+							},
+							"name": "N",
+							"source": {
+								"$ref": "AAAAAAGVmyn2ugXuTgU="
+							},
+							"target": {
+								"$ref": "AAAAAAGVmyYPqQXNduQ="
+							}
+						},
+						{
+							"_type": "FCFlow",
+							"_id": "AAAAAAGVmy0aSwY3Om8=",
+							"_parent": {
+								"$ref": "AAAAAAGVmyn2ugXuTgU="
+							},
+							"source": {
+								"$ref": "AAAAAAGVmyn2ugXuTgU="
+							},
+							"target": {
+								"$ref": "AAAAAAGVmyxfDAYsFyI="
+							}
+						}
+					]
+				},
+				{
+					"_type": "FCDecision",
+					"_id": "AAAAAAGVmyxfDAYsFyI=",
+					"_parent": {
+						"$ref": "AAAAAAGVmyFTPAVw1EY="
+					},
+					"name": "Ham madde factory ye mi tıklandı?",
+					"ownedElements": [
+						{
+							"_type": "FCFlow",
+							"_id": "AAAAAAGVmy5aUwZKSFE=",
+							"_parent": {
+								"$ref": "AAAAAAGVmyxfDAYsFyI="
+							},
+							"name": "Y",
+							"source": {
+								"$ref": "AAAAAAGVmyxfDAYsFyI="
+							},
+							"target": {
+								"$ref": "AAAAAAGVmy32rwZAhNY="
+							}
+						},
+						{
+							"_type": "FCFlow",
+							"_id": "AAAAAAGVmzmdagbxiZg=",
+							"_parent": {
+								"$ref": "AAAAAAGVmyxfDAYsFyI="
+							},
+							"name": "N",
+							"source": {
+								"$ref": "AAAAAAGVmyxfDAYsFyI="
+							},
+							"target": {
+								"$ref": "AAAAAAGVmzky8AblZVc="
+							}
+						}
+					]
+				},
+				{
+					"_type": "FCDecision",
+					"_id": "AAAAAAGVmy32rwZAhNY=",
+					"_parent": {
+						"$ref": "AAAAAAGVmyFTPAVw1EY="
+					},
+					"name": "Üretilmiş Malzeme var mı?",
+					"ownedElements": [
+						{
+							"_type": "FCFlow",
+							"_id": "AAAAAAGVmy9iwQZibpc=",
+							"_parent": {
+								"$ref": "AAAAAAGVmy32rwZAhNY="
+							},
+							"name": "N",
+							"source": {
+								"$ref": "AAAAAAGVmy32rwZAhNY="
+							},
+							"target": {
+								"$ref": "AAAAAAGVmyn2ugXuTgU="
+							}
+						},
+						{
+							"_type": "FCFlow",
+							"_id": "AAAAAAGVmzOf+QaHW4k=",
+							"_parent": {
+								"$ref": "AAAAAAGVmy32rwZAhNY="
+							},
+							"name": "Y",
+							"source": {
+								"$ref": "AAAAAAGVmy32rwZAhNY="
+							},
+							"target": {
+								"$ref": "AAAAAAGVmzEYswZyIxo="
+							}
+						}
+					]
+				},
+				{
+					"_type": "FCProcess",
+					"_id": "AAAAAAGVmzEYswZyIxo=",
+					"_parent": {
+						"$ref": "AAAAAAGVmyFTPAVw1EY="
+					},
+					"name": "Üretilmiş malzeme toplanır. Kapasite sıfırlanır.",
+					"ownedElements": [
+						{
+							"_type": "FCFlow",
+							"_id": "AAAAAAGVm0DY4weTKks=",
+							"_parent": {
+								"$ref": "AAAAAAGVmzEYswZyIxo="
+							},
+							"source": {
+								"$ref": "AAAAAAGVmzEYswZyIxo="
+							},
+							"target": {
+								"$ref": "AAAAAAGVmyn2ugXuTgU="
+							}
+						}
+					]
+				},
+				{
+					"_type": "FCProcess",
+					"_id": "AAAAAAGVmzPTIgaS/os=",
+					"_parent": {
+						"$ref": "AAAAAAGVmyFTPAVw1EY="
+					},
+					"name": "Factoryler de emir varsa üretim başlar. ** Hay Factory kapasitesi dolu olmadığı müddetçe üretmeye devam eder. Biten emirlerdeki factory ler durur.",
+					"ownedElements": [
+						{
+							"_type": "FCFlow",
+							"_id": "AAAAAAGVmzZI8gang88=",
+							"_parent": {
+								"$ref": "AAAAAAGVmzPTIgaS/os="
+							},
+							"source": {
+								"$ref": "AAAAAAGVmzPTIgaS/os="
+							},
+							"target": {
+								"$ref": "AAAAAAGVmyn2ugXuTgU="
+							}
+						}
+					]
+				},
+				{
+					"_type": "FCProcess",
+					"_id": "AAAAAAGVmzky8AblZVc=",
+					"_parent": {
+						"$ref": "AAAAAAGVmyFTPAVw1EY="
+					},
+					"name": "Factory üzerinde Production butonlar açılır.",
+					"ownedElements": [
+						{
+							"_type": "FCFlow",
+							"_id": "AAAAAAGVmzsmiwcOiSs=",
+							"_parent": {
+								"$ref": "AAAAAAGVmzky8AblZVc="
+							},
+							"source": {
+								"$ref": "AAAAAAGVmzky8AblZVc="
+							},
+							"target": {
+								"$ref": "AAAAAAGVmzrA2gcDPn0="
+							}
+						}
+					]
+				},
+				{
+					"_type": "FCDecision",
+					"_id": "AAAAAAGVmzrA2gcDPn0=",
+					"_parent": {
+						"$ref": "AAAAAAGVmyFTPAVw1EY="
+					},
+					"name": " Production butonlara tıklandı mı?",
+					"ownedElements": [
+						{
+							"_type": "FCFlow",
+							"_id": "AAAAAAGVmzxwjwc04L0=",
+							"_parent": {
+								"$ref": "AAAAAAGVmzrA2gcDPn0="
+							},
+							"name": "N",
+							"source": {
+								"$ref": "AAAAAAGVmzrA2gcDPn0="
+							},
+							"target": {
+								"$ref": "AAAAAAGVmzwlIwcqzoY="
+							}
+						},
+						{
+							"_type": "FCFlow",
+							"_id": "AAAAAAGVm1XZzQkNh6M=",
+							"_parent": {
+								"$ref": "AAAAAAGVmzrA2gcDPn0="
+							},
+							"name": "Y",
+							"source": {
+								"$ref": "AAAAAAGVmzrA2gcDPn0="
+							},
+							"target": {
+								"$ref": "AAAAAAGVm1VkYAjzMGg="
+							}
+						}
+					]
+				},
+				{
+					"_type": "FCDecision",
+					"_id": "AAAAAAGVmzwlIwcqzoY=",
+					"_parent": {
+						"$ref": "AAAAAAGVmyFTPAVw1EY="
+					},
+					"name": "Factory Üzerine mi Tıklandı",
+					"ownedElements": [
+						{
+							"_type": "FCFlow",
+							"_id": "AAAAAAGVm0I3Yge6fY0=",
+							"_parent": {
+								"$ref": "AAAAAAGVmzwlIwcqzoY="
+							},
+							"name": "Y",
+							"source": {
+								"$ref": "AAAAAAGVmzwlIwcqzoY="
+							},
+							"target": {
+								"$ref": "AAAAAAGVm0HGSgeuNdA="
+							}
+						},
+						{
+							"_type": "FCFlow",
+							"_id": "AAAAAAGVm0qHpwimot4=",
+							"_parent": {
+								"$ref": "AAAAAAGVmzwlIwcqzoY="
+							},
+							"name": "N",
+							"source": {
+								"$ref": "AAAAAAGVmzwlIwcqzoY="
+							},
+							"target": {
+								"$ref": "AAAAAAGVm0TYCQgB2+4="
+							}
+						}
+					]
+				},
+				{
+					"_type": "FCDecision",
+					"_id": "AAAAAAGVm0HGSgeuNdA=",
+					"_parent": {
+						"$ref": "AAAAAAGVmyFTPAVw1EY="
+					},
+					"name": "Üretilmiş Malzeme var mı?",
+					"ownedElements": [
+						{
+							"_type": "FCFlow",
+							"_id": "AAAAAAGVm0LtegfWnNk=",
+							"_parent": {
+								"$ref": "AAAAAAGVm0HGSgeuNdA="
+							},
+							"name": "Y",
+							"source": {
+								"$ref": "AAAAAAGVm0HGSgeuNdA="
+							},
+							"target": {
+								"$ref": "AAAAAAGVm0KW6wfI84Q="
+							}
+						},
+						{
+							"_type": "FCFlow",
+							"_id": "AAAAAAGVm0ri8QizEq0=",
+							"_parent": {
+								"$ref": "AAAAAAGVm0HGSgeuNdA="
+							},
+							"name": "N",
+							"source": {
+								"$ref": "AAAAAAGVm0HGSgeuNdA="
+							},
+							"target": {
+								"$ref": "AAAAAAGVmzrA2gcDPn0="
+							}
+						}
+					]
+				},
+				{
+					"_type": "FCProcess",
+					"_id": "AAAAAAGVm0KW6wfI84Q=",
+					"_parent": {
+						"$ref": "AAAAAAGVmyFTPAVw1EY="
+					},
+					"name": "Üretilmiş malzeme toplanır. Kapasite sıfırlanır.",
+					"ownedElements": [
+						{
+							"_type": "FCFlow",
+							"_id": "AAAAAAGVm0s7RwjCGlw=",
+							"_parent": {
+								"$ref": "AAAAAAGVm0KW6wfI84Q="
+							},
+							"source": {
+								"$ref": "AAAAAAGVm0KW6wfI84Q="
+							},
+							"target": {
+								"$ref": "AAAAAAGVmzrA2gcDPn0="
+							}
+						}
+					]
+				},
+				{
+					"_type": "FCProcess",
+					"_id": "AAAAAAGVm0TYCQgB2+4=",
+					"_parent": {
+						"$ref": "AAAAAAGVmyFTPAVw1EY="
+					},
+					"name": "Factory üzerinde Production butonlar kapanır",
+					"ownedElements": [
+						{
+							"_type": "FCFlow",
+							"_id": "AAAAAAGVm0VpHggWQ04=",
+							"_parent": {
+								"$ref": "AAAAAAGVm0TYCQgB2+4="
+							},
+							"source": {
+								"$ref": "AAAAAAGVm0TYCQgB2+4="
+							},
+							"target": {
+								"$ref": "AAAAAAGVmzPTIgaS/os="
+							}
+						}
+					]
+				},
+				{
+					"_type": "FCDecision",
+					"_id": "AAAAAAGVm1VkYAjzMGg=",
+					"_parent": {
+						"$ref": "AAAAAAGVmyFTPAVw1EY="
+					},
+					"name": "Buton aktif mi?",
+					"ownedElements": [
+						{
+							"_type": "FCFlow",
+							"_id": "AAAAAAGVm1WnJwj/GOI=",
+							"_parent": {
+								"$ref": "AAAAAAGVm1VkYAjzMGg="
+							},
+							"name": "N",
+							"source": {
+								"$ref": "AAAAAAGVm1VkYAjzMGg="
+							},
+							"target": {
+								"$ref": "AAAAAAGVmzrA2gcDPn0="
+							}
+						},
+						{
+							"_type": "FCFlow",
+							"_id": "AAAAAAGVm1bm1Akm2RM=",
+							"_parent": {
+								"$ref": "AAAAAAGVm1VkYAjzMGg="
+							},
+							"name": "Y",
+							"source": {
+								"$ref": "AAAAAAGVm1VkYAjzMGg="
+							},
+							"target": {
+								"$ref": "AAAAAAGVm1aEjgkYyJY="
+							}
+						}
+					]
+				},
+				{
+					"_type": "FCDecision",
+					"_id": "AAAAAAGVm1aEjgkYyJY=",
+					"_parent": {
+						"$ref": "AAAAAAGVmyFTPAVw1EY="
+					},
+					"name": "Emir ver butonuna mı tıklandı?",
+					"ownedElements": [
+						{
+							"_type": "FCFlow",
+							"_id": "AAAAAAGVm1ti8AlVRno=",
+							"_parent": {
+								"$ref": "AAAAAAGVm1aEjgkYyJY="
+							},
+							"name": "Y",
+							"source": {
+								"$ref": "AAAAAAGVm1aEjgkYyJY="
+							},
+							"target": {
+								"$ref": "AAAAAAGVm1lHywkwQkI="
+							}
+						},
+						{
+							"_type": "FCFlow",
+							"_id": "AAAAAAGVm14DMgly2qU=",
+							"_parent": {
+								"$ref": "AAAAAAGVm1aEjgkYyJY="
+							},
+							"name": "N",
+							"source": {
+								"$ref": "AAAAAAGVm1aEjgkYyJY="
+							},
+							"target": {
+								"$ref": "AAAAAAGVm1wnaAlpamA="
+							}
+						}
+					]
+				},
+				{
+					"_type": "FCProcess",
+					"_id": "AAAAAAGVm1lHywkwQkI=",
+					"_parent": {
+						"$ref": "AAAAAAGVmyFTPAVw1EY="
+					},
+					"name": "Üretim için gerekli malzeme 1 düşer. Emir sayısı 1 artar. Emir verebilme durumuna göre buton aktifliği değişebilir.",
+					"ownedElements": [
+						{
+							"_type": "FCFlow",
+							"_id": "AAAAAAGVm1t8uAleHA0=",
+							"_parent": {
+								"$ref": "AAAAAAGVm1lHywkwQkI="
+							},
+							"source": {
+								"$ref": "AAAAAAGVm1lHywkwQkI="
+							},
+							"target": {
+								"$ref": "AAAAAAGVm1VkYAjzMGg="
+							}
+						}
+					]
+				},
+				{
+					"_type": "FCProcess",
+					"_id": "AAAAAAGVm1wnaAlpamA=",
+					"_parent": {
+						"$ref": "AAAAAAGVmyFTPAVw1EY="
+					},
+					"name": "Emir Sayısı azalır. üretim için gerekli olan malzeme iade edilir. Eğer üretimde bir emir kalmaz ise timer durur ve emir ver butonu inaktif olur",
+					"ownedElements": [
+						{
+							"_type": "FCFlow",
+							"_id": "AAAAAAGVm14O2Al7C1o=",
+							"_parent": {
+								"$ref": "AAAAAAGVm1wnaAlpamA="
+							},
+							"source": {
+								"$ref": "AAAAAAGVm1wnaAlpamA="
+							},
+							"target": {
+								"$ref": "AAAAAAGVm1VkYAjzMGg="
+							}
+						}
+					]
+				}
+			]
+		}
+	]
+}
