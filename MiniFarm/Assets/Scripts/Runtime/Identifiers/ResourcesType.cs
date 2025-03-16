@@ -1,7 +1,8 @@
 namespace Runtime.Identifiers
 {
-    public enum CurrencyTypes : int
+    public enum ResourcesType : int
     {
+        None = 0,
         Hay = 1,
         Flour = 2,
         Bread = 3

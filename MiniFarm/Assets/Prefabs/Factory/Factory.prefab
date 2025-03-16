@@ -120,6 +120,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8662207653540946967}
+  - component: {fileID: 2428773311010445128}
+  - component: {fileID: 1155939299397170370}
+  - component: {fileID: 3428355743645886917}
   m_Layer: 0
   m_Name: Factory
   m_TagString: Untagged
@@ -145,6 +148,56 @@ Transform:
   - {fileID: 8593530779666016803}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 45, z: 0}
+--- !u!114 &2428773311010445128
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6312203444666483822}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0166d8ff8d905b048b2448179e1f5d11, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _components:
+  - {fileID: 1155939299397170370}
+  - {fileID: 1155939299397170370}
+  _identifier: 
+  _useSceneContext: 0
+  _context: {fileID: 0}
+  _bindType: 0
+--- !u!114 &1155939299397170370
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6312203444666483822}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 186a55f0c7604efdac82b34085ef83e7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &3428355743645886917
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6312203444666483822}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0e8d3651a7c4671b0214a4e0cbe0284, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  factoryVo:
+    GainedHarvestType: 1
+    GainedHarvestAmount: 1
+    HarvestingTime: 20
+    HarvestCapacity: 5
+    ConsumedResourcesType: 0
+    ConsumedResourcesAmount: 0
 --- !u!1 &8314682566163329291
 GameObject:
   m_ObjectHideFlags: 0
@@ -469,6 +522,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: ProductionButtons
+      objectReference: {fileID: 0}
+    - target: {fileID: 968317275001706276, guid: 51c1f3cde62b6ec49b8662f1a82f8096,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3078725126783253658, guid: 51c1f3cde62b6ec49b8662f1a82f8096,
         type: 3}
