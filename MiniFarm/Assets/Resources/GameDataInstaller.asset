@@ -12,5 +12,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7466b55fbd734caab29b15d7e38da3e8, type: 3}
   m_Name: GameDataInstaller
   m_EditorClassIdentifier: 
-  levelsContainer: {fileID: 11400000, guid: 3454eebc57335c640b080b2504bcbb4c, type: 2}
   audioData: {fileID: 11400000, guid: 9ec8bb8bf109a1a46ac3419c7eea38d3, type: 2}
+  _currencyData: {fileID: 11400000, guid: 4c910144779b10945a84cc89e52add92, type: 2}

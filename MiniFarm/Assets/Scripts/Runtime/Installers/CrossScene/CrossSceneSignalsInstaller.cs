@@ -1,4 +1,5 @@
 using Runtime.Signals;
+using Runtime.Signals.Currency;
 using Zenject;
 
 namespace Runtime.Installers.CrossScene
@@ -9,6 +10,9 @@ namespace Runtime.Installers.CrossScene
         {
             Container.DeclareSignal<LoadSceneSignal>();
             Container.DeclareSignal<ChangeLoadingScreenActivationSignal>();
+            
+            Container.DeclareSignal<ChangeCurrencyValueSignal>();
+            Container.DeclareSignal<RefreshCurrencyVisualSignal>();
         }
     }
 }
