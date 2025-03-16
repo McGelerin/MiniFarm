@@ -555,7 +555,7 @@ GameObject:
   - component: {fileID: 5982216326703870915}
   - component: {fileID: 5982216326703870912}
   m_Layer: 5
-  m_Name: Slider_Level01_Yellow
+  m_Name: Slider Area
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

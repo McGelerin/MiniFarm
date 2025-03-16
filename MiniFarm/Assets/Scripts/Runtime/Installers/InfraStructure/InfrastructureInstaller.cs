@@ -2,8 +2,6 @@ using Runtime.Audio;
 using Runtime.Audio.Model;
 using Runtime.Haptic;
 using Runtime.Haptic.Model;
-using Runtime.Infrastructures;
-using Runtime.Models;
 using UnityEngine;
 using Zenject;
 
@@ -18,15 +16,11 @@ namespace Runtime.Installers.InfraStructure
             InstallModules();
             
             BindAudio();
-            
-            Container.BindInterfacesAndSelfTo<GameProgressController>().AsSingle();
-            Container.BindInterfacesAndSelfTo<GameProgressModel>().AsSingle();
         }
         
         private void InstallModules()
         {
             SignalBusInstaller.Install(Container);
-            //CommandInvokerInstaller.Install(Container);
         }
         
         private void BindAudio()
