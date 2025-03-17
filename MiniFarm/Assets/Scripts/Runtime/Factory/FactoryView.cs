@@ -3,11 +3,9 @@ using UnityEngine;
 
 namespace Runtime.Factory
 {
-    public class FactoryView : MonoBehaviour, IClickable
+    public class FactoryView : MonoBehaviour
     {
         [SerializeField] private FactoryVO factoryVo;
         public FactoryVO FactoryVo => factoryVo;
-        
-        
     }
 }
