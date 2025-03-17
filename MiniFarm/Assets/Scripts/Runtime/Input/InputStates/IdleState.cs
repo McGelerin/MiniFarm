@@ -19,6 +19,7 @@ namespace Runtime.Input.InputStates
         
         public void Enter()
         {
+            Debug.Log("IdleState");
         }
 
         public void Tick()

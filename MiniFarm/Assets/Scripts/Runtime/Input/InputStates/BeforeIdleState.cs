@@ -1,5 +1,6 @@
 using Runtime.Input.Enums;
 using Runtime.Input.Signals;
+using UnityEngine;
 using Zenject;
 using static UnityEngine.Input;
 
@@ -11,6 +12,7 @@ namespace Runtime.Input.InputStates
         
         public void Enter()
         {
+            Debug.Log("BeforeIdleState");
         }
 
         public void Tick()

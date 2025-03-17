@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using Runtime.Identifiers.Template;
 using Runtime.Input.Enums;
 using Runtime.Input.Signals;
+using Runtime.Signals;
 using UniRx;
 using Zenject;
 
@@ -10,22 +11,13 @@ namespace Runtime.Input.InputStates
 {
     public class InputStateMachine : SignalListener, ITickable
     {
-        private readonly IInputState _inactiveState;
-        private readonly IInputState _idleState;
-        private readonly IInputState _beforeIdleState;
-        private readonly IInputState _clickState;
-
+        [Inject(Id = InputState.Inactive) ] private readonly IInputState _inactiveState;
+        [Inject(Id = InputState.Idle) ] private readonly IInputState _idleState;
+        [Inject(Id = InputState.BeforeIdle) ] private readonly IInputState _beforeIdleState;
+        [Inject(Id = InputState.Click) ] private readonly IInputState _clickState;
+        
         [Inject] private IInputModel inputModel;
-
-        [Inject]
-        public InputStateMachine(InactiveState inactiveState, IdleState idleState, BeforeIdleState beforeIdleState, 
-            ClickState clickState)
-        {
-            _inactiveState = inactiveState;
-            _idleState = idleState;
-            _beforeIdleState = beforeIdleState;
-            _clickState = clickState;
-        }
+        
 
         private IInputState _currentState;
         private Dictionary<InputState, IInputState> _statesLookup;
@@ -51,6 +43,11 @@ namespace Runtime.Input.InputStates
             _signalBus.GetStream<ChangeInputStateSignal>()
                 .Subscribe(OnChangeInputStateSignal)
                 .AddTo(_disposables);
+
+            _signalBus.GetStream<ChangeLoadingScreenActivationSignal>()
+                .Where(x => !x.IsActive)
+                .Subscribe(CloseLoadingScreen)
+                .AddTo(_disposables);
         }
         
         private void OnChangeInputStateSignal(ChangeInputStateSignal signal)
@@ -74,9 +71,15 @@ namespace Runtime.Input.InputStates
         private void ChangeState(IInputState targetState)
         {
             _currentState.Exit();
-            targetState.Enter();
             
             _currentState = targetState;
+            
+            _currentState.Enter();
+        }
+
+        private void CloseLoadingScreen(ChangeLoadingScreenActivationSignal signal)
+        {
+            StateControl(InputState.Idle);
         }
 
         public override void Dispose()

@@ -30,6 +30,9 @@ namespace Runtime.Input.InputStates
         
         public void Enter()
         {
+            Debug.Log("ClickState");
+
+            
             if (UnityEngine.Input.touchCount == 0)
             {
                 throw new Exception("No touch input detected when entering Click Input State!");
@@ -39,10 +42,7 @@ namespace Runtime.Input.InputStates
             _touchPosition = _touch.position;
 
             _clickable = _clickRaycaster.RaycastTouchPosition(_touchPosition);
-        }
-
-        public void Tick()
-        {
+            
             if (UnityEngine.Input.touchCount == 1)
             {
                 _touch = UnityEngine.Input.GetTouch(0);
@@ -54,9 +54,16 @@ namespace Runtime.Input.InputStates
                 }
                 else if (_clickable != null)
                 {
+                    _clickable.OnClicked();
                     //Bu kısma click atıldıysa 
                 }
             }
+
+            SwitchToState(InputState.BeforeIdle);
+        }
+
+        public void Tick()
+        {
         }
         
         private void SwitchToState(InputState targetState)

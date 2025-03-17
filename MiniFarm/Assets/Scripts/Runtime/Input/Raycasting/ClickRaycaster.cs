@@ -9,7 +9,7 @@ namespace Runtime.Input.Raycasting
     {
         private RaycastHit[] _raycastHits = new RaycastHit[5];
         private readonly int _layerMask = 1 << 6;
-        private const float RAYCAST_DISTANCE = 100f;
+        private const float RAYCAST_DISTANCE = 300f;
 
         private Camera _mainCamera;
 
@@ -36,7 +36,7 @@ namespace Runtime.Input.Raycasting
             {
                 var raycastHit = _raycastHits[index];
                 
-                if (raycastHit.transform.parent.TryGetComponent(out IClickable order))
+                if (raycastHit.transform.parent.parent.TryGetComponent(out IClickable order))
                 {
                     return order;
                 }
