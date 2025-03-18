@@ -35,6 +35,7 @@ namespace Runtime.Installers.Factory
         {
             Container.BindInterfacesAndSelfTo<FactoryProductionManager>().AsSingle();
             Container.BindInterfacesAndSelfTo<InitProductionHandler>().AsSingle();
+            Container.Bind<FactoryProductionCollectHandler>().AsSingle();
         }
         
         private void BindSignals()

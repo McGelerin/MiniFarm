@@ -37,6 +37,23 @@ namespace Runtime.Factory.Model
             SaveFactoryValues();
         }
 
+        public void FactoryProductionCollect(int factoryID)
+        {
+            var factorySaveData = _factorySaveValues[factoryID];
+
+            if (factorySaveData.TaskAmount == 0)
+            {
+                _factorySaveValues.Remove(factoryID);
+            }
+            else
+            {
+                if (factorySaveData.CompletedTaskAmount <= 0) return;
+                
+                factorySaveData.CompletedTaskAmount = 0;
+                factorySaveData.StartProductionTime = DateTime.UtcNow;
+            }
+        }
+        
         public void FactoryCompletedTask(int factoryID, int completedTaskAmount, bool isRawFactory)
         {
             var factorySaveData = _factorySaveValues[factoryID];

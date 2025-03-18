@@ -10,8 +10,8 @@ namespace Runtime.Factory.FactoryUI.SliderArea
     public class CountdownTimerHandler : SignalListener
     {
         
-        private float remainingTime;
-        private CancellationTokenSource cts;
+        private float _remainingTime;
+        private CancellationTokenSource _cts;
         
         private readonly SliderAreaView _sliderAreaView;
         private readonly FactoryView _factoryView;
@@ -35,39 +35,37 @@ namespace Runtime.Factory.FactoryUI.SliderArea
         
         private async UniTaskVoid StartCountdown(CancellationToken token)
         {
-            while (remainingTime > 0)
+            while (_remainingTime > 0)
             {
-                remainingTime -= Time.deltaTime;
+                _remainingTime -= Time.deltaTime;
 
                 var harvestingTime = _factoryView.FactoryVo.HarvestingTime;
-                float sliderValue  = (harvestingTime - remainingTime) / harvestingTime;
+                float sliderValue  = (harvestingTime - _remainingTime) / harvestingTime;
 
                 _sliderAreaView.CountdownSlider.value = sliderValue;
-                _sliderAreaView.CountdownText.SetText(remainingTime.ToString("F0"));
+                _sliderAreaView.CountdownText.SetText(_remainingTime.ToString("F0"));
                 
                 await UniTask.Yield(PlayerLoopTiming.Update, token);
             }
             
             _sliderAreaView.CountdownText.SetText("0");
             
-            //await UniTask.Delay(100, cancellationToken: token);
-            
             _signalBus.Fire(new CompleteTimerSignal());
         }
 
         private void StopTimer()
         {
-            cts?.Cancel();
+            _cts?.Cancel();
             
             Debug.Log("Timer sıfırlandı!");
         }
         
         private void OnStartTimerSignal(StartTimerSignal signal)
         {
-            remainingTime = signal.CountdownTime;
-            cts?.Cancel();
-            cts = new CancellationTokenSource();
-            StartCountdown(cts.Token).Forget();
+            _remainingTime = signal.CountdownTime;
+            _cts?.Cancel();
+            _cts = new CancellationTokenSource();
+            StartCountdown(_cts.Token).Forget();
         }
         
         private void OnStopTimerSignal(StopTimerSignal signal)
@@ -79,7 +77,7 @@ namespace Runtime.Factory.FactoryUI.SliderArea
         {
             base.Dispose();
             
-            cts?.Cancel();
+            _cts?.Cancel();
         }
     }
 }

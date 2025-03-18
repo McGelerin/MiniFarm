@@ -2,6 +2,7 @@ using System;
 using Runtime.Input.Enums;
 using Runtime.Input.Raycasting;
 using Runtime.Input.Signals;
+using Runtime.Signals;
 using UnityEngine;
 using UnityEngine.EventSystems;
 using Zenject;
@@ -20,7 +21,6 @@ namespace Runtime.Input.InputStates
         
         private IClickable _clickable;
         
-        [Inject]
         private ClickState(SignalBus signalBus, IClickRaycaster clickRaycaster, IInputModel inputModel)
         {
             _signalBus = signalBus;
@@ -40,7 +40,6 @@ namespace Runtime.Input.InputStates
             
             _touch = UnityEngine.Input.GetTouch(0);
             _touchPosition = _touch.position;
-
             _clickable = _clickRaycaster.RaycastTouchPosition(_touchPosition);
             
             if (UnityEngine.Input.touchCount == 1)
@@ -50,12 +49,30 @@ namespace Runtime.Input.InputStates
                 
                 if (_touch.phase == TouchPhase.Ended && !EventSystem.current.IsPointerOverGameObject(_touch.fingerId))
                 {
-                    SwitchToState(InputState.Idle);
+                    SwitchToState(InputState.BeforeIdle);
                 }
                 else if (_clickable != null)
                 {
-                    _clickable.OnClicked();
-                    //Bu kısma click atıldıysa 
+                    if (_inputModel.Clickable == null)
+                    {
+                        _inputModel.SetClickable(_clickable);
+                        _clickable.OnClicked();
+                    }
+                    else if (_inputModel.Clickable == _clickable)
+                    {
+                        _clickable.OnClicked();
+                    }
+                    else
+                    {
+                        _signalBus.Fire(new AnotherAreaClickSignal());
+                        _inputModel.SetClickable(_clickable);
+                        _clickable.OnClicked();
+                    }
+                }
+                else
+                {
+                    _inputModel.SetClickable(null);
+                    _signalBus.Fire(new AnotherAreaClickSignal());
                 }
             }
 
