@@ -6,6 +6,7 @@ namespace Runtime.Factory.Data
     [Serializable]
     public class FactoryVO
     {
+        public int FactoryID;
         public ResourcesType GainedHarvestType;
         public int GainedHarvestAmount;
         public int HarvestingTime;

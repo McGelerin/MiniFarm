@@ -196,16 +196,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 322034052}
     m_Modifications:
-    - target: {fileID: 2428773311010445128, guid: 6f85b408f00def34cb0c3054d63b97c0,
-        type: 3}
-      propertyPath: _context
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 2428773311010445128, guid: 6f85b408f00def34cb0c3054d63b97c0,
-        type: 3}
-      propertyPath: _useSceneContext
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 2929349978243518142, guid: 6f85b408f00def34cb0c3054d63b97c0,
         type: 3}
       propertyPath: m_AnchorMax.x
@@ -215,6 +205,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3428355743645886917, guid: 6f85b408f00def34cb0c3054d63b97c0,
+        type: 3}
+      propertyPath: factoryVo.FactoryID
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 3428355743645886917, guid: 6f85b408f00def34cb0c3054d63b97c0,
         type: 3}
@@ -382,16 +377,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 322034052}
     m_Modifications:
-    - target: {fileID: 2428773311010445128, guid: 6f85b408f00def34cb0c3054d63b97c0,
-        type: 3}
-      propertyPath: _context
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 2428773311010445128, guid: 6f85b408f00def34cb0c3054d63b97c0,
-        type: 3}
-      propertyPath: _useSceneContext
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 2929349978243518142, guid: 6f85b408f00def34cb0c3054d63b97c0,
         type: 3}
       propertyPath: m_AnchorMax.x
@@ -401,6 +386,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3428355743645886917, guid: 6f85b408f00def34cb0c3054d63b97c0,
+        type: 3}
+      propertyPath: factoryVo.FactoryID
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 3428355743645886917, guid: 6f85b408f00def34cb0c3054d63b97c0,
         type: 3}
@@ -894,16 +884,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 322034052}
     m_Modifications:
-    - target: {fileID: 2428773311010445128, guid: 6f85b408f00def34cb0c3054d63b97c0,
-        type: 3}
-      propertyPath: _context
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 2428773311010445128, guid: 6f85b408f00def34cb0c3054d63b97c0,
-        type: 3}
-      propertyPath: _useSceneContext
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 2929349978243518142, guid: 6f85b408f00def34cb0c3054d63b97c0,
         type: 3}
       propertyPath: m_AnchorMax.x
@@ -1240,15 +1220,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 322034052}
     m_Modifications:
-    - target: {fileID: 2929349978243518142, guid: 6f85b408f00def34cb0c3054d63b97c0,
+    - target: {fileID: 3428355743645886917, guid: 6f85b408f00def34cb0c3054d63b97c0,
         type: 3}
-      propertyPath: m_AnchorMax.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2929349978243518142, guid: 6f85b408f00def34cb0c3054d63b97c0,
-        type: 3}
-      propertyPath: m_AnchorMax.y
-      value: 0
+      propertyPath: factoryVo.HarvestingTime
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 6312203444666483822, guid: 6f85b408f00def34cb0c3054d63b97c0,
         type: 3}

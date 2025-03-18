@@ -1,5 +1,6 @@
 using Runtime.Creation;
 using Runtime.Currency;
+using Runtime.Factory.Model;
 using Runtime.GameArea;
 using Zenject;
 
@@ -12,6 +13,13 @@ namespace Runtime.Installers.GameAreaScene
             Container.Install<ViewMediatorInstallerNotTick<CurrencyView,CurrencyMediator>>();
             
             Container.BindInterfacesAndSelfTo<GameAreaInitializer>().AsSingle();
+
+            BindFactoryModel();
+        }
+        
+        private void BindFactoryModel()
+        {
+            Container.BindInterfacesAndSelfTo<FactoryModel>().AsSingle();
         }
     }
 }

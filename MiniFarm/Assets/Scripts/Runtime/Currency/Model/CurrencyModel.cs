@@ -16,13 +16,11 @@ namespace Runtime.Currency.Model
 
         #region Fields
         private Dictionary<CurrencyTypes, int> _currencyValues;
-        private Dictionary<CurrencyTypes, bool> _currencyCountdownStatus;
         #endregion
 
         #region Getters
         public CurrencyDataSO CurrencyData => _currencyData;
         public Dictionary<CurrencyTypes, int> CurrencyValues => _currencyValues;
-        public Dictionary<CurrencyTypes, bool> CurrencyCountdownStatus => _currencyCountdownStatus;
         #endregion
 
         #region Constructor

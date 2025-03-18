@@ -1,4 +1,5 @@
 using Runtime.Currency.Model;
+using Runtime.Factory.Model;
 using Runtime.Identifiers;
 using Runtime.Input.Raycasting;
 using UnityEngine;
@@ -8,18 +9,9 @@ namespace Runtime.Factory
 {
     public class FactoryFacade : MonoBehaviour, IClickable
     {
+        [Inject]private FactoryView _factoryView;
+        [Inject]private CurrencyModel _currencyModel;
 
-        private FactoryView _factoryView;
-        private CurrencyModel _currencyModel;
-        private SignalBus _signalBus;
-
-        [Inject]
-        public void Construct(SignalBus signalBus,FactoryView factoryView, CurrencyModel currencyModel)
-        {
-            _signalBus = signalBus;
-            _factoryView = factoryView;
-            _currencyModel = currencyModel;
-        }
         
         public IClickable OnClicked()
         {

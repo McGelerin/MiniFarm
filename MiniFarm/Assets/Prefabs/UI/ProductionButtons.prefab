@@ -9,7 +9,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3078725126783253658}
-  m_Layer: 0
+  - component: {fileID: 2750500247455021970}
+  m_Layer: 6
   m_Name: ProductionButtons
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -37,6 +38,18 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &2750500247455021970
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 968317275001706276}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c17cf574d0f044e5a6325a9c99bc871d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &3364189061230531379
 GameObject:
   m_ObjectHideFlags: 0
@@ -48,7 +61,7 @@ GameObject:
   - component: {fileID: 2391936396947428336}
   - component: {fileID: 8523325657232815445}
   - component: {fileID: 5662757917383228609}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Text (TMP) (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -183,7 +196,7 @@ GameObject:
   - component: {fileID: 4133815181569245807}
   - component: {fileID: 5985586165149397284}
   - component: {fileID: 577483658888619812}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Text (TMP)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -318,7 +331,7 @@ GameObject:
   - component: {fileID: 7201651097506464487}
   - component: {fileID: 2189398404366380994}
   - component: {fileID: 7278770246512578406}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Text (TMP)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -451,13 +464,13 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4874669705497969253}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Issue Order
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &4874669705497969253
 RectTransform:
   m_ObjectHideFlags: 0
@@ -489,7 +502,7 @@ GameObject:
   - component: {fileID: 7218310544243341404}
   - component: {fileID: 5839854558003591890}
   - component: {fileID: 3178462900437815439}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Image
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -566,7 +579,7 @@ GameObject:
   - component: {fileID: 8563512438238344657}
   - component: {fileID: 6461668253906793471}
   - component: {fileID: 5803870883354788174}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Issue Order BG
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -685,13 +698,13 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8714193055302550837}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Revoke Order
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &8714193055302550837
 RectTransform:
   m_ObjectHideFlags: 0
@@ -724,7 +737,7 @@ GameObject:
   - component: {fileID: 6716707260580915695}
   - component: {fileID: 8501727312465634658}
   - component: {fileID: 316620811755619491}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Revoke Order BG
   m_TagString: Untagged
   m_Icon: {fileID: 0}
