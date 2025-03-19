@@ -1,4 +1,5 @@
 using Runtime.Factory.FactoryProductionManager;
+using Runtime.Factory.FactoryUI.ProductionButtons;
 using Runtime.Identifiers;
 using Runtime.Input.Raycasting;
 using Runtime.Signals;
@@ -13,6 +14,7 @@ namespace Runtime.Factory
         [Inject] private FactoryView _factoryView;
         [Inject] private SignalBus _signalBus;
         [Inject] private FactoryProductionCollectHandler _factoryProductionCollectHandler;
+        [Inject] private OpenCloseProductionButtonsHandler _openCloseProductionButtonsHandler;
 
         private readonly CompositeDisposable _disposables = new();
         private bool _isOpenedProductionButtons = false;
@@ -43,7 +45,7 @@ namespace Runtime.Factory
         private void OpenProductionButtons()
         {
             _isOpenedProductionButtons = true;
-            Debug.Log("open button");
+            _openCloseProductionButtonsHandler.OpenCloseButtons(true);
         }
 
         private void CollectProductions()
@@ -55,10 +57,8 @@ namespace Runtime.Factory
         {
             if (_isOpenedProductionButtons)
             {
-                //butonlar kapanır
-                
                 _isOpenedProductionButtons = false;
-                Debug.Log("Close button");
+                _openCloseProductionButtonsHandler.OpenCloseButtons(false);
             }
         }
 

@@ -215,7 +215,7 @@ MonoBehaviour:
     FactoryID: 0
     GainedHarvestType: 1
     GainedHarvestAmount: 1
-    HarvestingTime: 20
+    HarvestingTime: 5
     HarvestCapacity: 5
     ConsumedResourcesType: 0
     ConsumedResourcesAmount: 0

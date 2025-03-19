@@ -5,7 +5,7 @@ using UnityEngine;
 
 namespace Runtime.Currency.Data
 {
-    [CreateAssetMenu(fileName = "CurrencyDataSO", menuName = "MiniFarm/Runtime/Currency/Data/CurrencyDataSO", order = 0)]
+    [CreateAssetMenu(fileName = "CurrencyDataSO", menuName = "MiniFarm/Data/CurrencyDataSO", order = 0)]
     public class CurrencyDataSO : SerializedScriptableObject
     {
         #region Fields

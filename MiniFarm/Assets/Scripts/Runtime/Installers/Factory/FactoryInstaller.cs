@@ -1,5 +1,6 @@
 using Runtime.Factory.FactoryProductionManager;
 using Runtime.Factory.FactoryUI;
+using Runtime.Factory.FactoryUI.ProductionButtons;
 using Runtime.Factory.FactoryUI.SliderArea;
 using Runtime.Signals.Production;
 using Runtime.Signals.ProductionButtons;
@@ -18,8 +19,7 @@ namespace Runtime.Installers.Factory
         
         public override void InstallBindings()
         {
-            Container.Bind<ProductionButtonsController>().FromComponentOn(productionButtonsControllerGameObject).AsSingle();
-            
+            BindProductionButtons();
             BindSliderArea();
             BindFactoryProduction();
             BindSignals();
@@ -36,6 +36,12 @@ namespace Runtime.Installers.Factory
             Container.BindInterfacesAndSelfTo<FactoryProductionManager>().AsSingle();
             Container.BindInterfacesAndSelfTo<InitProductionHandler>().AsSingle();
             Container.Bind<FactoryProductionCollectHandler>().AsSingle();
+        }
+
+        private void BindProductionButtons()
+        {
+            Container.Bind<ProductionButtonsView>().FromComponentOn(productionButtonsControllerGameObject).AsSingle();
+            Container.BindInterfacesAndSelfTo<OpenCloseProductionButtonsHandler>().AsSingle();
         }
         
         private void BindSignals()

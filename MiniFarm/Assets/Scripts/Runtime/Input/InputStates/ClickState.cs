@@ -30,9 +30,6 @@ namespace Runtime.Input.InputStates
         
         public void Enter()
         {
-            Debug.Log("ClickState");
-
-            
             if (UnityEngine.Input.touchCount == 0)
             {
                 throw new Exception("No touch input detected when entering Click Input State!");

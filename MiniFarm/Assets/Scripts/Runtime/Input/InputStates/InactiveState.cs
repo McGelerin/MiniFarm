@@ -6,7 +6,6 @@ namespace Runtime.Input.InputStates
     {
         public void Enter()
         {
-            Debug.Log("InactiveState");
         }
 
         public void Tick()

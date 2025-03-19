@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3078725126783253658}
   - component: {fileID: 2750500247455021970}
+  - component: {fileID: 7595429055456907900}
   m_Layer: 6
   m_Name: ProductionButtons
   m_TagString: Untagged
@@ -50,6 +51,32 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c17cf574d0f044e5a6325a9c99bc871d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  productionButtonsAnimator: {fileID: 7595429055456907900}
+  consumedResourcesTypeImage: {fileID: 3178462900437815439}
+  consumedResourcesAmountText: {fileID: 577483658888619812}
+  issueOrderButton: {fileID: 0}
+  revokeOrderButton: {fileID: 0}
+--- !u!95 &7595429055456907900
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 968317275001706276}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: d1e01dded3c20544e8fa45c1affe555d, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &3364189061230531379
 GameObject:
   m_ObjectHideFlags: 0
@@ -197,7 +224,7 @@ GameObject:
   - component: {fileID: 5985586165149397284}
   - component: {fileID: 577483658888619812}
   m_Layer: 6
-  m_Name: Text (TMP)
+  m_Name: ConsumedResourcesAmountText (TMP)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -503,7 +530,7 @@ GameObject:
   - component: {fileID: 5839854558003591890}
   - component: {fileID: 3178462900437815439}
   m_Layer: 6
-  m_Name: Image
+  m_Name: ConsumedResourcesTypeImage
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -714,7 +741,7 @@ RectTransform:
   m_GameObject: {fileID: 8293159786861225525}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0, y: 0, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 4726319020139796852}
