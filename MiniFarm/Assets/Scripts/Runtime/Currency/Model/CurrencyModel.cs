@@ -19,7 +19,6 @@ namespace Runtime.Currency.Model
         #endregion
 
         #region Getters
-        public CurrencyDataSO CurrencyData => _currencyData;
         public Dictionary<CurrencyTypes, int> CurrencyValues => _currencyValues;
         #endregion
 

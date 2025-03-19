@@ -42,6 +42,7 @@ namespace Runtime.Installers.Factory
         {
             Container.Bind<ProductionButtonsView>().FromComponentOn(productionButtonsControllerGameObject).AsSingle();
             Container.BindInterfacesAndSelfTo<OpenCloseProductionButtonsHandler>().AsSingle();
+            Container.BindInterfacesAndSelfTo<ButtonsInteractableHandle>().AsSingle();
         }
         
         private void BindSignals()
@@ -54,6 +55,7 @@ namespace Runtime.Installers.Factory
             Container.DeclareSignal<CompleteTimerSignal>();
             
             Container.DeclareSignal<CheckFactoryProductionSignal>();
+            Container.DeclareSignal<CheckButtonsInteractableSignal>();
         }
     }
 }
