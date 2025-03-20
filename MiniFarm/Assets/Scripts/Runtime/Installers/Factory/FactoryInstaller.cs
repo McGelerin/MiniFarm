@@ -40,6 +40,7 @@ namespace Runtime.Installers.Factory
 
         private void BindProductionButtons()
         {
+            Container.Bind<ProductionButtonClickHandler>().AsSingle();
             Container.Bind<ProductionButtonsView>().FromComponentOn(productionButtonsControllerGameObject).AsSingle();
             Container.BindInterfacesAndSelfTo<OpenCloseProductionButtonsHandler>().AsSingle();
             Container.BindInterfacesAndSelfTo<ButtonsInteractableHandle>().AsSingle();
@@ -47,9 +48,6 @@ namespace Runtime.Installers.Factory
         
         private void BindSignals()
         {
-            Container.DeclareSignal<IssueOrderButtonClickSignal>();
-            Container.DeclareSignal<RevokeOrderButtonClickSignal>();
-            
             Container.DeclareSignal<StartTimerSignal>();
             Container.DeclareSignal<StopTimerSignal>();
             Container.DeclareSignal<CompleteTimerSignal>();

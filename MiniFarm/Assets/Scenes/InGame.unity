@@ -907,7 +907,7 @@ PrefabInstance:
     - target: {fileID: 3428355743645886917, guid: 6f85b408f00def34cb0c3054d63b97c0,
         type: 3}
       propertyPath: factoryVo.HarvestingTime
-      value: 40
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 3428355743645886917, guid: 6f85b408f00def34cb0c3054d63b97c0,
         type: 3}

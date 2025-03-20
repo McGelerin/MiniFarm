@@ -5,17 +5,21 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="bd0f910d-3546-4b73-8a34-8f258550a4c9" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Runtime/Factory/FactoryUI/ProductionButtons/ButtonsInteractableHandle.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Runtime/Factory/FactoryUI/ProductionButtons/ButtonsInteractableHandle.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Runtime/Signals/ProductionButtons/CheckButtonsInteractableSignal.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Runtime/Signals/ProductionButtons/CheckButtonsInteractableSignal.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Runtime/Factory/FactoryUI/ProductionButtons/ProductionButtonClickHandler.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Runtime/Factory/FactoryUI/ProductionButtons/ProductionButtonClickHandler.cs.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.MiniFarm/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.MiniFarm/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Factory/Factory.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Factory/Factory.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/UI/ProductionButtons.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/UI/ProductionButtons.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/UI/Slider Area.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/UI/Slider Area.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/InGame.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/InGame.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Runtime/Currency/Model/CurrencyModel.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Runtime/Currency/Model/CurrencyModel.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Runtime/Factory/FactoryUI/ProductionButtons/OpenCloseProductionButtonsHandler.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Runtime/Factory/FactoryUI/ProductionButtons/OpenCloseProductionButtonsHandler.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Runtime/Factory/FactoryFacade.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Runtime/Factory/FactoryFacade.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Runtime/Factory/FactoryProductionManager/FactoryProductionCollectHandler.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Runtime/Factory/FactoryProductionManager/FactoryProductionCollectHandler.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Runtime/Factory/FactoryProductionManager/FactoryProductionManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Runtime/Factory/FactoryProductionManager/FactoryProductionManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Runtime/Factory/FactoryUI/ProductionButtons/ButtonsInteractableHandle.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Runtime/Factory/FactoryUI/ProductionButtons/ButtonsInteractableHandle.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Runtime/Factory/Model/FactoryModel.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Runtime/Factory/Model/FactoryModel.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Runtime/Installers/Factory/FactoryInstaller.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Runtime/Installers/Factory/FactoryInstaller.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Runtime/Signals/ProductionButtons/IssueOrderButtonClickSignal.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Runtime/Signals/ProductionButtons/IssueOrderButtonClickSignal.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Runtime/Signals/ProductionButtons/RevokeOrderButtonClickSignal.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Runtime/Signals/ProductionButtons/RevokeOrderButtonClickSignal.cs.meta" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -27,6 +31,7 @@
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/2b1663220bc040c8b2cc78475bd09a7117a000/05/4135fe43/IMGUIContainer.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/356d430fdcb04bbf8dc54776e1d3627f46ac00/fa/127051a4/ThrowHelper.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/95971c1103884a7eb2035c95161bde2b177000/be/c1275299/Camera.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/ff2e9f31e14d4a178e56657ed3ccfac97c00/31/e271fd80/Touch.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
@@ -39,27 +44,28 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Attach to Unity Editor.Attach to Unity Editor &amp; Play.executor&quot;: &quot;Debug&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Attach to Unity Editor.Attach to Unity Editor & Play.executor": "Debug",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "XThreadsFramesViewSplitterKey": "0.34890965",
+    "git-widget-placeholder": "main",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "vue.rearranger.settings.migration": "true"
   },
-  &quot;keyToStringList&quot;: {
-    &quot;rider.external.source.directories&quot;: [
-      &quot;C:\\Users\\Shovoo\\AppData\\Roaming\\JetBrains\\Rider2023.3\\resharper-host\\DecompilerCache&quot;,
-      &quot;C:\\Users\\Shovoo\\AppData\\Roaming\\JetBrains\\Rider2023.3\\resharper-host\\SourcesCache&quot;,
-      &quot;C:\\Users\\Shovoo\\AppData\\Local\\Symbols\\src&quot;
+  "keyToStringList": {
+    "rider.external.source.directories": [
+      "C:\\Users\\Shovoo\\AppData\\Roaming\\JetBrains\\Rider2023.3\\resharper-host\\DecompilerCache",
+      "C:\\Users\\Shovoo\\AppData\\Roaming\\JetBrains\\Rider2023.3\\resharper-host\\SourcesCache",
+      "C:\\Users\\Shovoo\\AppData\\Local\\Symbols\\src"
     ]
   }
-}</component>
+}]]></component>
   <component name="RunManager" selected="Attach to Unity Editor.Attach to Unity Editor &amp; Play">
     <configuration name="Start Unity" type="RunUnityExe" factoryName="Unity Executable">
       <option name="EXE_PATH" value="C:\Program Files\Unity\Hub\Editor\2022.3.59f1\Editor\Unity.exe" />
@@ -77,10 +83,10 @@
       <option name="USE_EXTERNAL_CONSOLE" value="0" />
       <method v="2" />
     </configuration>
-    <configuration name="Attach to Unity Editor &amp; Play" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="UNITY_ATTACH_AND_PLAY" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost" ignored-value-for-modified-check="8884">
+    <configuration name="Attach to Unity Editor &amp; Play" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="UNITY_ATTACH_AND_PLAY" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost" ignored-value-for-modified-check="11244">
       <option name="allowRunningInParallel" value="false" />
       <option name="listenPortForConnections" value="false" />
-      <option name="pid" value="8884" />
+      <option name="pid" value="11244" />
       <option name="projectPathOnTarget" />
       <option name="selectedOptions">
         <list />
@@ -116,7 +122,10 @@
       <workItem from="1742283039188" duration="16524000" />
       <workItem from="1742323195386" duration="74000" />
       <workItem from="1742323277702" duration="7981000" />
-      <workItem from="1742381431297" duration="11054000" />
+      <workItem from="1742381431297" duration="18266000" />
+      <workItem from="1742413828384" duration="2176000" />
+      <workItem from="1742456251737" duration="2493000" />
+      <workItem from="1742458788551" duration="8176000" />
     </task>
     <servers />
   </component>
@@ -132,17 +141,17 @@
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/Assets/Scripts/Runtime/Factory/FactoryFacade.cs</url>
-          <line>30</line>
-          <properties documentPath="C:\Users\Shovoo\Desktop\MiniFarm\MiniFarm\Assets\Scripts\Runtime\Factory\FactoryFacade.cs" initialLine="30" containingFunctionPresentation="Method 'OnClicked'">
+          <url>file://$PROJECT_DIR$/Assets/Scripts/Runtime/Factory/FactoryProductionManager/FactoryProductionManager.cs</url>
+          <line>39</line>
+          <properties documentPath="C:\Users\Shovoo\Desktop\MiniFarm\MiniFarm\Assets\Scripts\Runtime\Factory\FactoryProductionManager\FactoryProductionManager.cs" initialLine="39" containingFunctionPresentation="Method 'OnCheckFactoryProductionSignal'">
             <startOffsets>
-              <option value="995" />
+              <option value="1312" />
             </startOffsets>
             <endOffsets>
-              <option value="1066" />
+              <option value="1357" />
             </endOffsets>
           </properties>
-          <option name="timeStamp" value="1" />
+          <option name="timeStamp" value="3" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

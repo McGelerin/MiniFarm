@@ -43,66 +43,38 @@ namespace Runtime.Factory.FactoryProductionManager
 
             var factorySaveValue = _factoryModel.FactorySaveValues[factoryVo.FactoryID];
 
-            int producedAmount = GetProducedAmount();
-            float remainingTime = GetRemainingTime();
+            int producedAmount = _factoryModel.GetProducedAmount(factoryVo.FactoryID, factoryVo.HarvestingTime);
+            float remainingTime = _factoryModel.GetRemainingTime(factoryVo.FactoryID, factoryVo.HarvestingTime);
+            _factoryModel.FactoryCompletedTask(factoryVo.FactoryID, producedAmount);
             
-            _sliderAreaView.StockText.SetText(producedAmount.ToString());
-
-            if (factoryVo.GainedHarvestAmount * factorySaveValue.CompletedTaskAmount < _factoryView.FactoryVo.HarvestCapacity)
+            
+            if (factorySaveValue.TaskAmount > factorySaveValue.CompletedTaskAmount)
             {
-                if (producedAmount * factoryVo.GainedHarvestAmount < factoryVo.HarvestCapacity)
-                {
-                    _signalBus.Fire(new StartTimerSignal(remainingTime));
-                
-                    _factoryModel.FactoryCompletedTask(factoryVo.FactoryID, producedAmount , factoryVo.ConsumedResourcesType != ResourcesType.None);
-                
-                    _sliderAreaView.StockText.SetText((producedAmount * factoryVo.GainedHarvestAmount).ToString());
-                }
-                else
-                {
-                    _factoryModel.FactoryCompletedTask(factoryVo.FactoryID,  factoryVo.HarvestCapacity, factoryVo.ConsumedResourcesType != ResourcesType.None);
-                
-                    _sliderAreaView.CountdownSlider.value = 0;
-                    _sliderAreaView.CountdownText.SetText("Full");
-                
-                    _sliderAreaView.StockText.SetText((factoryVo.HarvestCapacity).ToString());
-                }
+                _signalBus.Fire(new StartTimerSignal(remainingTime));
             }
             else
             {
-                _sliderAreaView.CountdownSlider.value = 0;
-                _sliderAreaView.CountdownText.SetText("Full");
-                
-                _sliderAreaView.StockText.SetText((factoryVo.HarvestCapacity).ToString());
+                if (factoryVo.GainedHarvestAmount * factorySaveValue.CompletedTaskAmount < _factoryView.FactoryVo.HarvestCapacity)
+                {
+                    _signalBus.Fire(new StopTimerSignal());
+                    _sliderAreaView.CountdownSlider.value = 0;
+                    _sliderAreaView.CountdownText.SetText("");
+                }
+                else
+                { 
+                    _signalBus.Fire(new StopTimerSignal());
+                    _sliderAreaView.CountdownSlider.value = 0; 
+                    _sliderAreaView.CountdownText.SetText("Full");
+                }
             }
+            
+            _sliderAreaView.StockText.SetText((producedAmount * factoryVo.GainedHarvestAmount).ToString());
+
             
             if (!_sliderAreaView.CountdownSlider.gameObject.activeSelf && (factorySaveValue.TaskAmount > 0 || factorySaveValue.CompletedTaskAmount > 0))
             {
                 _sliderAreaView.CountdownSlider.gameObject.SetActive(true);
             }
-        }
-        
-        private int GetProducedAmount()
-        {
-            var saveData = _factoryModel.FactorySaveValues[_factoryView.FactoryVo.FactoryID];
-            
-            double elapsedTime = (DateTime.UtcNow - saveData.StartProductionTime).TotalSeconds;
-            return Mathf.Min((int)(elapsedTime / _factoryView.FactoryVo.HarvestingTime), saveData.TaskAmount);
-        }
-        
-        private float GetRemainingTime()
-        {
-            var saveData = _factoryModel.FactorySaveValues[_factoryView.FactoryVo.FactoryID];
-            
-            double elapsedTime = (DateTime.UtcNow - saveData.StartProductionTime).TotalSeconds;
-            float totalProductionTime = saveData.TaskAmount * _factoryView.FactoryVo.HarvestingTime;
-
-            if (elapsedTime >= totalProductionTime)
-            {
-                return 0f;
-            }
-
-            return (float)(totalProductionTime - elapsedTime) % _factoryView.FactoryVo.HarvestingTime;
         }
 
         private void OnCompleteTimerSignal(CompleteTimerSignal signal)

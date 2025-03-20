@@ -13,8 +13,10 @@ namespace Runtime.Factory
     {
         [Inject] private FactoryView _factoryView;
         [Inject] private SignalBus _signalBus;
+        [Inject] private ProductionButtonsView _productionButtonsView;
         [Inject] private FactoryProductionCollectHandler _factoryProductionCollectHandler;
         [Inject] private OpenCloseProductionButtonsHandler _openCloseProductionButtonsHandler;
+        [Inject] private ProductionButtonClickHandler _productionButtonClickHandler;
 
         private readonly CompositeDisposable _disposables = new();
         private bool _isOpenedProductionButtons = false;
@@ -24,6 +26,9 @@ namespace Runtime.Factory
              _signalBus.GetStream<AnotherAreaClickSignal>()
                 .Subscribe(OnAnotherAreaClickSignal)
                 .AddTo(_disposables);
+             
+             _productionButtonsView.IssueOrderButton.onClick.AddListener(OnIssueOrderButton);
+             _productionButtonsView.RevokeOrderButton.onClick.AddListener(OnRevokeOrderButton);
         }
 
         public void OnClicked()
@@ -62,9 +67,20 @@ namespace Runtime.Factory
             }
         }
 
+        private void OnIssueOrderButton()
+        {
+            _productionButtonClickHandler.IssueOrderButtonClick();
+        }        
+        private void OnRevokeOrderButton()
+        {
+            _productionButtonClickHandler.RevokeOrderButtonClick();
+        }
+        
         private void OnDestroy()
         {
             _disposables?.Dispose();
+            _productionButtonsView.IssueOrderButton.onClick.RemoveListener(OnIssueOrderButton);
+            _productionButtonsView.RevokeOrderButton.onClick.RemoveListener(OnRevokeOrderButton);
         }
     }
 }

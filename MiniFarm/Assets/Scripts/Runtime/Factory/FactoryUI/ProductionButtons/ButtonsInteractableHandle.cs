@@ -2,7 +2,6 @@ using Runtime.Currency.Model;
 using Runtime.Factory.Model;
 using Runtime.Identifiers;
 using Runtime.Identifiers.Template;
-using Runtime.Signals.Currency;
 using Runtime.Signals.ProductionButtons;
 using UniRx;
 
@@ -27,10 +26,6 @@ namespace Runtime.Factory.FactoryUI.ProductionButtons
         {
             _signalBus.GetStream<CheckButtonsInteractableSignal>()
                 .Subscribe(OnCheckButtonsInteractableSignal)
-                .AddTo(_disposables);
-            
-            _signalBus.GetStream<ChangeCurrencyValueSignal>()
-                .Subscribe(OnChangeCurrencyValueSignal)
                 .AddTo(_disposables);
         }
         
@@ -64,24 +59,15 @@ namespace Runtime.Factory.FactoryUI.ProductionButtons
 
         private void CheckRevokeButton()
         {
-
             if (_factoryModel.FactorySaveValues.TryGetValue(_factoryView.FactoryVo.FactoryID, out var value))
             {
                 int taskAmount = value.TaskAmount;
-                _productionButtonsView.RevokeOrderButton.interactable = taskAmount != 0;
+                _productionButtonsView.RevokeOrderButton.interactable = taskAmount > value.CompletedTaskAmount;
             }
             else
             {
                 _productionButtonsView.RevokeOrderButton.interactable = false;
             }
-        }
-
-        private void OnChangeCurrencyValueSignal(ChangeCurrencyValueSignal signal)
-        {
-            ResourcesType consumedResourcesType = _factoryView.FactoryVo.ConsumedResourcesType;
-            if (consumedResourcesType == ResourcesType.None) return;
-            
-            CheckIssueOrderButton();
         }
     }
 }
