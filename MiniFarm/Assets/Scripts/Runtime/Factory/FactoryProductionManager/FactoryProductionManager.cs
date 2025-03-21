@@ -46,16 +46,17 @@ namespace Runtime.Factory.FactoryProductionManager
             int producedAmount = _factoryModel.GetProducedAmount(factoryVo.FactoryID, factoryVo.HarvestingTime);
             float remainingTime = _factoryModel.GetRemainingTime(factoryVo.FactoryID, factoryVo.HarvestingTime);
             _factoryModel.FactoryCompletedTask(factoryVo.FactoryID, producedAmount);
-
-            var completedTask = _factoryModel.GetCompletedTasks(factoryVo.FactoryID);
             
-            if (factorySaveValue.TaskAmount > completedTask)
+            int completedTasks = _factoryModel.GetCompletedTasks(factoryVo.FactoryID);
+
+            
+            if (factorySaveValue.TaskAmount > _factoryModel.FactorySaveValues[factoryVo.FactoryID].CompletedTaskAmount)
             {
                 _signalBus.Fire(new StartTimerSignal(remainingTime));
             }
             else
             {
-                if (factoryVo.GainedHarvestAmount * completedTask < _factoryView.FactoryVo.HarvestCapacity)
+                if (factoryVo.GainedHarvestAmount * completedTasks < _factoryView.FactoryVo.HarvestCapacity)
                 {
                     _signalBus.Fire(new StopTimerSignal());
                     _sliderAreaView.CountdownSlider.value = 0;
@@ -68,16 +69,15 @@ namespace Runtime.Factory.FactoryProductionManager
                     _sliderAreaView.CountdownText.SetText("Full");
                 }
             }
-
-            int completedTasks = factorySaveValue.CompletedTaskAmount + factorySaveValue.BeforeCompletedTaskAmount;
             
             _sliderAreaView.StockText.SetText((completedTasks * factoryVo.GainedHarvestAmount).ToString());
-
             
             if (!_sliderAreaView.CountdownSlider.gameObject.activeSelf && (factorySaveValue.TaskAmount > 0 || completedTasks > 0))
             {
                 _sliderAreaView.CountdownSlider.gameObject.SetActive(true);
             }
+            
+            _signalBus.Fire(new CheckTaskTextSignal());
         }
 
         private void OnCompleteTimerSignal(CompleteTimerSignal signal)

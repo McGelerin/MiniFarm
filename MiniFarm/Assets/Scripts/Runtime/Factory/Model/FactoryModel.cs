@@ -13,9 +13,7 @@ namespace Runtime.Factory.Model
         #endregion
         
         private Dictionary<int, FactorySaveDataVO> _factorySaveValues;
-
         public Dictionary<int, FactorySaveDataVO> FactorySaveValues => _factorySaveValues;
-
         
         public void Initialize()
         {
@@ -42,14 +40,15 @@ namespace Runtime.Factory.Model
         {
             FactorySaveDataVO factorySaveData = _factorySaveValues[factoryID];
 
-            if (factorySaveData.CompletedTaskAmount == 0) return;
+            if (GetCompletedTasks(factoryID) == 0) return;
 
             if (!isRawFactory)
             {
-                factorySaveData.TaskAmount -= (factorySaveData.CompletedTaskAmount + factorySaveData.BeforeCompletedTaskAmount);
+                factorySaveData.TaskAmount -= (factorySaveData.CompletedTaskAmount);
                 if (factorySaveData.TaskAmount == 0)
                 {
                     _factorySaveValues.Remove(factoryID);
+                    return;
                 }
             }
             
@@ -93,10 +92,11 @@ namespace Runtime.Factory.Model
             }
             else
             {
-                if (_factorySaveValues[factoryID].TaskAmount == _factorySaveValues[factoryID].CompletedTaskAmount + _factorySaveValues[factoryID].BeforeCompletedTaskAmount)
+                if (_factorySaveValues[factoryID].TaskAmount == _factorySaveValues[factoryID].CompletedTaskAmount)
                 {
-                    _factorySaveValues[factoryID].TaskAmount++;
-                    _factorySaveValues[factoryID].BeforeCompletedTaskAmount += _factorySaveValues[factoryID].CompletedTaskAmount;
+                    _factorySaveValues[factoryID].BeforeCompletedTaskAmount += (_factorySaveValues[factoryID].CompletedTaskAmount);
+                    _factorySaveValues[factoryID].CompletedTaskAmount = 0;
+                    _factorySaveValues[factoryID].TaskAmount = 1;
                     _factorySaveValues[factoryID].StartProductionTime = DateTime.UtcNow;
                 }
                 else
@@ -112,9 +112,13 @@ namespace Runtime.Factory.Model
         {
             _factorySaveValues[factoryID].TaskAmount--;
 
-            if (_factorySaveValues[factoryID].TaskAmount == 0 && _factorySaveValues[factoryID].CompletedTaskAmount == 0)
+            if (_factorySaveValues[factoryID].TaskAmount == 0 && GetCompletedTasks(factoryID) == 0)
             {
                 _factorySaveValues.Remove(factoryID);
+            }
+            else if (_factorySaveValues[factoryID].TaskAmount == 0 && GetCompletedTasks(factoryID) > 0)
+            {
+                _factorySaveValues[factoryID].StartProductionTime = DateTime.UtcNow;
             }
             
             SaveFactoryValues();

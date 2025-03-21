@@ -15,8 +15,6 @@ namespace Runtime.Installers.Factory
         [SerializeField] private GameObject productionButtonsControllerGameObject;
         [SerializeField] private GameObject sliderAreaViewGameObject;
         
-        
-        
         public override void InstallBindings()
         {
             BindProductionButtons();
@@ -29,6 +27,7 @@ namespace Runtime.Installers.Factory
         {
             Container.Bind<SliderAreaView>().FromComponentOn(sliderAreaViewGameObject).AsSingle();
             Container.BindInterfacesAndSelfTo<CountdownTimerHandler>().AsSingle();
+            Container.BindInterfacesAndSelfTo<TaskTextHandler>().AsSingle();
         }
 
         private void BindFactoryProduction()
@@ -54,6 +53,7 @@ namespace Runtime.Installers.Factory
             
             Container.DeclareSignal<CheckFactoryProductionSignal>();
             Container.DeclareSignal<CheckButtonsInteractableSignal>();
+            Container.DeclareSignal<CheckTaskTextSignal>();
         }
     }
 }

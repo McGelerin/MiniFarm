@@ -36,10 +36,6 @@ namespace Runtime.Factory.FactoryProductionManager
             _signalBus.Fire(new ChangeCurrencyValueSignal((CurrencyTypes)type, completedTaskAmount * _factoryView.FactoryVo.GainedHarvestAmount, false));
             
             _factoryModel.FactoryProductionCollect(_factoryView.FactoryVo.FactoryID, _factoryView.FactoryVo.HarvestingTime, _factoryView.FactoryVo.ConsumedResourcesType == ResourcesType.None);
-
-            if (factoryVo.ConsumedResourcesType == ResourcesType.None)
-            {
-            }
             
             if (!_factoryModel.FactorySaveValues.ContainsKey(factoryVo.FactoryID))
             {
@@ -50,7 +46,6 @@ namespace Runtime.Factory.FactoryProductionManager
             }
             
             _signalBus.Fire(new CheckFactoryProductionSignal());
-            
             _signalBus.Fire(new CheckButtonsInteractableSignal());
         }
     }

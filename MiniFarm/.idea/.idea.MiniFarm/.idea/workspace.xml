@@ -5,12 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="bd0f910d-3546-4b73-8a34-8f258550a4c9" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Runtime/Factory/Data/ValueObject/FactorySaveDataVO.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Runtime/Factory/Data/ValueObject/FactorySaveDataVO.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Runtime/Factory/FactoryProductionManager/FactoryProductionCollectHandler.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Runtime/Factory/FactoryProductionManager/FactoryProductionCollectHandler.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Runtime/Factory/FactoryUI/SliderArea/TaskTextHandler.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Runtime/Factory/FactoryUI/SliderArea/TaskTextHandler.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Runtime/Signals/SliderArea/CheckTaskTextSignal.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Runtime/Signals/SliderArea/CheckTaskTextSignal.cs.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Runtime/Factory/FactoryProductionManager/FactoryProductionManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Runtime/Factory/FactoryProductionManager/FactoryProductionManager.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Runtime/Factory/FactoryUI/ProductionButtons/ButtonsInteractableHandle.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Runtime/Factory/FactoryUI/ProductionButtons/ButtonsInteractableHandle.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Runtime/Factory/FactoryUI/ProductionButtons/ProductionButtonClickHandler.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Runtime/Factory/FactoryUI/ProductionButtons/ProductionButtonClickHandler.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Runtime/Factory/Model/FactoryModel.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Runtime/Factory/Model/FactoryModel.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Runtime/Factory/FactoryProductionManager/InitProductionHandler.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Runtime/Factory/FactoryProductionManager/InitProductionHandler.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Runtime/Installers/Factory/FactoryInstaller.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Runtime/Installers/Factory/FactoryInstaller.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -74,10 +75,10 @@
       <option name="USE_EXTERNAL_CONSOLE" value="0" />
       <method v="2" />
     </configuration>
-    <configuration name="Attach to Unity Editor &amp; Play" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="UNITY_ATTACH_AND_PLAY" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost">
+    <configuration name="Attach to Unity Editor &amp; Play" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="UNITY_ATTACH_AND_PLAY" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost" ignored-value-for-modified-check="7360">
       <option name="allowRunningInParallel" value="false" />
       <option name="listenPortForConnections" value="false" />
-      <option name="pid" />
+      <option name="pid" value="7360" />
       <option name="projectPathOnTarget" />
       <option name="selectedOptions">
         <list />
@@ -118,6 +119,7 @@
       <workItem from="1742456251737" duration="2493000" />
       <workItem from="1742458788551" duration="8176000" />
       <workItem from="1742468481472" duration="5166000" />
+      <workItem from="1742545535529" duration="4102000" />
     </task>
     <servers />
   </component>
@@ -144,6 +146,19 @@
             </endOffsets>
           </properties>
           <option name="timeStamp" value="3" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/Assets/Scripts/Runtime/Factory/FactoryProductionManager/FactoryProductionCollectHandler.cs</url>
+          <line>30</line>
+          <properties documentPath="C:\Users\Shovoo\Desktop\MiniFarm\MiniFarm\Assets\Scripts\Runtime\Factory\FactoryProductionManager\FactoryProductionCollectHandler.cs" initialLine="30" containingFunctionPresentation="Method 'ProductionCollect'">
+            <startOffsets>
+              <option value="1080" />
+            </startOffsets>
+            <endOffsets>
+              <option value="1125" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="4" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

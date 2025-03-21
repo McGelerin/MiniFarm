@@ -1,6 +1,7 @@
 using Runtime.Factory.Model;
 using Runtime.Identifiers;
 using Runtime.Signals.Production;
+using Runtime.Signals.SliderArea;
 using Zenject;
 
 namespace Runtime.Factory.FactoryUI.SliderArea

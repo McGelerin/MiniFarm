@@ -48,8 +48,7 @@ namespace Runtime.Factory.FactoryUI.ProductionButtons
             }
             else if (_factoryModel.FactorySaveValues.TryGetValue(_factoryView.FactoryVo.FactoryID, out var value))
             {
-                int taskAmount = value.TaskAmount;
-
+                int taskAmount = _factoryModel.GetCompletedTasks(_factoryView.FactoryVo.FactoryID) + (value.TaskAmount - value.CompletedTaskAmount);
                 _productionButtonsView.IssueOrderButton.interactable = taskAmount != _factoryView.FactoryVo.HarvestCapacity;
             }
             else
@@ -63,7 +62,7 @@ namespace Runtime.Factory.FactoryUI.ProductionButtons
             if (_factoryModel.FactorySaveValues.TryGetValue(_factoryView.FactoryVo.FactoryID, out var value))
             {
                 int taskAmount = value.TaskAmount;
-                _productionButtonsView.RevokeOrderButton.interactable = taskAmount > value.CompletedTaskAmount + value.BeforeCompletedTaskAmount;
+                _productionButtonsView.RevokeOrderButton.interactable = taskAmount > value.CompletedTaskAmount;
             }
             else
             {
