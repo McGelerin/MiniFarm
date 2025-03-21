@@ -31,8 +31,8 @@ namespace Runtime.Factory.FactoryUI.ProductionButtons
             _factoryModel.FactoryIncreaseTask(_factoryView.FactoryVo.FactoryID);
             
             _signalBus.Fire(new ChangeCurrencyValueSignal((CurrencyTypes)factoryVo.ConsumedResourcesType, -factoryVo.ConsumedResourcesAmount, false));
-            _signalBus.Fire(new CheckButtonsInteractableSignal());
             _signalBus.Fire(new CheckFactoryProductionSignal());
+            _signalBus.Fire(new CheckButtonsInteractableSignal());
         }
 
         public void RevokeOrderButtonClick()
@@ -41,9 +41,7 @@ namespace Runtime.Factory.FactoryUI.ProductionButtons
             
             _factoryModel.FactoryDecreaseTask(_factoryView.FactoryVo.FactoryID);
             _signalBus.Fire(new ChangeCurrencyValueSignal((CurrencyTypes)factoryVo.ConsumedResourcesType, factoryVo.ConsumedResourcesAmount, false));
-
-            _signalBus.Fire(new CheckButtonsInteractableSignal());
-
+            
             if (_factoryModel.FactorySaveValues.ContainsKey(_factoryView.FactoryVo.FactoryID))
             {
                 _signalBus.Fire(new CheckFactoryProductionSignal());
@@ -53,6 +51,8 @@ namespace Runtime.Factory.FactoryUI.ProductionButtons
                 _signalBus.Fire(new StopTimerSignal());
                 _sliderAreaView.CountdownSlider.gameObject.SetActive(false);
             }
+            
+            _signalBus.Fire(new CheckButtonsInteractableSignal());
         }
     }
 }

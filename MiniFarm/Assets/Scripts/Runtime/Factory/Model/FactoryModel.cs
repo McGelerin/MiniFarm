@@ -40,16 +40,13 @@ namespace Runtime.Factory.Model
 
         public void FactoryProductionCollect(int factoryID, int harvestingTime, bool isRawFactory)
         {
-            
             FactorySaveDataVO factorySaveData = _factorySaveValues[factoryID];
-
-            Debug.Log("Collect");
 
             if (factorySaveData.CompletedTaskAmount == 0) return;
 
             if (!isRawFactory)
             {
-                factorySaveData.TaskAmount -= factorySaveData.CompletedTaskAmount;
+                factorySaveData.TaskAmount -= (factorySaveData.CompletedTaskAmount + factorySaveData.BeforeCompletedTaskAmount);
                 if (factorySaveData.TaskAmount == 0)
                 {
                     _factorySaveValues.Remove(factoryID);
@@ -57,11 +54,16 @@ namespace Runtime.Factory.Model
             }
             
             factorySaveData.CompletedTaskAmount = 0;
-            //float elapsedTime = harvestingTime - GetRemainingTime(factoryID, harvestingTime);
-            //elapsedTime = elapsedTime == harvestingTime ? 0 : elapsedTime;
+            factorySaveData.BeforeCompletedTaskAmount = 0;
+
+            float elapsedTime = 0;
+            if (_factorySaveValues.ContainsKey(factoryID))
+            {
+                elapsedTime = harvestingTime - GetRemainingTime(factoryID, harvestingTime);
+                elapsedTime = elapsedTime == harvestingTime ? 0 : elapsedTime;
+            }
             
-            factorySaveData.StartProductionTime = (DateTime.UtcNow);
-            
+            factorySaveData.StartProductionTime = (DateTime.UtcNow).AddSeconds(-elapsedTime);
         }
         
         public void FactoryCompletedTask(int factoryID, int completedTaskAmount)
@@ -77,6 +79,7 @@ namespace Runtime.Factory.Model
             {
                 StartProductionTime = DateTime.UtcNow,
                 TaskAmount = taskAmount,
+                BeforeCompletedTaskAmount = 0,
                 CompletedTaskAmount = 0
             };
             ChangeFactoryValue(factoryID, factorySaveData);
@@ -90,9 +93,10 @@ namespace Runtime.Factory.Model
             }
             else
             {
-                if (_factorySaveValues[factoryID].TaskAmount == _factorySaveValues[factoryID].CompletedTaskAmount)
+                if (_factorySaveValues[factoryID].TaskAmount == _factorySaveValues[factoryID].CompletedTaskAmount + _factorySaveValues[factoryID].BeforeCompletedTaskAmount)
                 {
                     _factorySaveValues[factoryID].TaskAmount++;
+                    _factorySaveValues[factoryID].BeforeCompletedTaskAmount += _factorySaveValues[factoryID].CompletedTaskAmount;
                     _factorySaveValues[factoryID].StartProductionTime = DateTime.UtcNow;
                 }
                 else
@@ -126,7 +130,7 @@ namespace Runtime.Factory.Model
         
         public float GetRemainingTime(int factoryID, int harvestingTime)
         {
-            var saveData = _factorySaveValues[factoryID];
+            FactorySaveDataVO saveData = _factorySaveValues[factoryID];
             
             double elapsedTime = (DateTime.UtcNow - saveData.StartProductionTime).TotalSeconds;
             float totalProductionTime = saveData.TaskAmount * harvestingTime;
@@ -137,6 +141,12 @@ namespace Runtime.Factory.Model
             }
 
             return (float)(totalProductionTime - elapsedTime) % harvestingTime;
+        }
+
+        public int GetCompletedTasks(int factoryID)
+        {
+            FactorySaveDataVO saveData = _factorySaveValues[factoryID];
+            return saveData.CompletedTaskAmount + saveData.BeforeCompletedTaskAmount;
         }
         
         private void SaveFactoryValues() => ES3.Save(nameof(FactorySaveValues), FactorySaveValues, FACTORY_PATH);

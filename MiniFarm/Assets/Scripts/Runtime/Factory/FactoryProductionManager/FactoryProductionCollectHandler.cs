@@ -4,6 +4,7 @@ using Runtime.Factory.Model;
 using Runtime.Identifiers;
 using Runtime.Signals.Currency;
 using Runtime.Signals.Production;
+using Runtime.Signals.ProductionButtons;
 using Zenject;
 
 namespace Runtime.Factory.FactoryProductionManager
@@ -29,7 +30,7 @@ namespace Runtime.Factory.FactoryProductionManager
             
             FactoryVO factoryVo = _factoryView.FactoryVo;
 
-            int completedTaskAmount = _factoryModel.FactorySaveValues[_factoryView.FactoryVo.FactoryID].CompletedTaskAmount;
+            int completedTaskAmount = _factoryModel.GetCompletedTasks(_factoryView.FactoryVo.FactoryID);
             var type = _factoryView.FactoryVo.GainedHarvestType;
             
             _signalBus.Fire(new ChangeCurrencyValueSignal((CurrencyTypes)type, completedTaskAmount * _factoryView.FactoryVo.GainedHarvestAmount, false));
@@ -49,6 +50,8 @@ namespace Runtime.Factory.FactoryProductionManager
             }
             
             _signalBus.Fire(new CheckFactoryProductionSignal());
+            
+            _signalBus.Fire(new CheckButtonsInteractableSignal());
         }
     }
 }

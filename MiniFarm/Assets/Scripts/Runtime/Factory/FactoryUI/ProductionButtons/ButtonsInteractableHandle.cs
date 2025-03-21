@@ -31,6 +31,7 @@ namespace Runtime.Factory.FactoryUI.ProductionButtons
         
         private void OnCheckButtonsInteractableSignal(CheckButtonsInteractableSignal signal)
         {
+            if (_factoryView.FactoryVo.ConsumedResourcesType == ResourcesType.None) return;
             CheckIssueOrderButton();
             CheckRevokeButton();
         }
@@ -62,7 +63,7 @@ namespace Runtime.Factory.FactoryUI.ProductionButtons
             if (_factoryModel.FactorySaveValues.TryGetValue(_factoryView.FactoryVo.FactoryID, out var value))
             {
                 int taskAmount = value.TaskAmount;
-                _productionButtonsView.RevokeOrderButton.interactable = taskAmount > value.CompletedTaskAmount;
+                _productionButtonsView.RevokeOrderButton.interactable = taskAmount > value.CompletedTaskAmount + value.BeforeCompletedTaskAmount;
             }
             else
             {

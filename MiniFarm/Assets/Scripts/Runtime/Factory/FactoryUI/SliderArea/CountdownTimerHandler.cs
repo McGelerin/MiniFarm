@@ -56,8 +56,6 @@ namespace Runtime.Factory.FactoryUI.SliderArea
         private void StopTimer()
         {
             _cts?.Cancel();
-            
-            Debug.Log("Timer sıfırlandı!");
         }
         
         private void OnStartTimerSignal(StartTimerSignal signal)

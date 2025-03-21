@@ -7,5 +7,6 @@ namespace Runtime.Factory.Data
         public DateTime StartProductionTime;
         public int TaskAmount;
         public int CompletedTaskAmount;
+        public int BeforeCompletedTaskAmount;
     }
 }
