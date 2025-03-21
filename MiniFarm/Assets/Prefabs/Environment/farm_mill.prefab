@@ -117,13 +117,14 @@ GameObject:
   - component: {fileID: 5300759251426885395}
   - component: {fileID: 7959236295677103065}
   - component: {fileID: -1806905406877870338}
+  - component: {fileID: 2276832223883145615}
   m_Layer: 0
   m_Name: farm_mill
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &9097218338041704630
 Transform:
   m_ObjectHideFlags: 0
@@ -211,3 +212,24 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 6.7364798, y: 12.9864, z: 6.7364798}
   m_Center: {x: 0.0030213594, y: 6.4932, z: -0.27352798}
+--- !u!95 &2276832223883145615
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8463424017483000332}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: bfd3f5fff660da64b9cbfb95f0965788, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
