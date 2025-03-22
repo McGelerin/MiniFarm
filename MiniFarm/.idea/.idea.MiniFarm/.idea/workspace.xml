@@ -5,8 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="bd0f910d-3546-4b73-8a34-8f258550a4c9" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Environment/farm_mill.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Environment/farm_mill.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Animations/Factory/FactoryTaskAnimController.controller" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animations/Factory/FactoryTaskAnimController.controller" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Animations/MillAnim/MillAnimationController.controller" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animations/MillAnim/MillAnimationController.controller" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Environment/farm_granary.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Environment/farm_granary.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Factory/Factory.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Factory/Factory.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/InGame.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/InGame.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Runtime/Factory/Data/ValueObject/FactoryVO.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Runtime/Factory/Data/ValueObject/FactoryVO.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Runtime/Factory/FactoryUI/SliderArea/CountdownTimerHandler.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Runtime/Factory/FactoryUI/SliderArea/CountdownTimerHandler.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -71,10 +76,10 @@
       <option name="USE_EXTERNAL_CONSOLE" value="0" />
       <method v="2" />
     </configuration>
-    <configuration name="Attach to Unity Editor &amp; Play" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="UNITY_ATTACH_AND_PLAY" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost" ignored-value-for-modified-check="7360">
+    <configuration name="Attach to Unity Editor &amp; Play" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="UNITY_ATTACH_AND_PLAY" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost">
       <option name="allowRunningInParallel" value="false" />
       <option name="listenPortForConnections" value="false" />
-      <option name="pid" value="7360" />
+      <option name="pid" />
       <option name="projectPathOnTarget" />
       <option name="selectedOptions">
         <list />
@@ -116,6 +121,7 @@
       <workItem from="1742458788551" duration="8176000" />
       <workItem from="1742468481472" duration="5166000" />
       <workItem from="1742545535529" duration="10991000" />
+      <workItem from="1742594755001" duration="1859000" />
     </task>
     <servers />
   </component>

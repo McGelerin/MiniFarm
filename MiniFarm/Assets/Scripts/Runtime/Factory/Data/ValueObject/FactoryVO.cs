@@ -1,5 +1,6 @@
 using System;
 using Runtime.Identifiers;
+using UnityEngine;
 
 namespace Runtime.Factory.Data
 {
@@ -13,5 +14,8 @@ namespace Runtime.Factory.Data
         public int HarvestCapacity;
         public ResourcesType ConsumedResourcesType;
         public int ConsumedResourcesAmount;
+        
+        [Header("Animator")]
+        public Animator TaskAnimator;
     }
 }

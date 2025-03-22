@@ -219,6 +219,7 @@ MonoBehaviour:
     HarvestCapacity: 5
     ConsumedResourcesType: 0
     ConsumedResourcesAmount: 0
+    TaskAnimator: {fileID: 2323199653118065390}
 --- !u!1 &7803871097597895316
 GameObject:
   m_ObjectHideFlags: 0

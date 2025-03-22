@@ -15,6 +15,10 @@ namespace Runtime.Factory.FactoryUI.SliderArea
         
         private readonly SliderAreaView _sliderAreaView;
         private readonly FactoryView _factoryView;
+        
+        private const string IS_TASK_START = "IsTaskStart";
+        
+        private int isTaskStart = Animator.StringToHash(IS_TASK_START);
 
         public CountdownTimerHandler(SliderAreaView sliderAreaView, FactoryView factoryView)
         {
@@ -55,12 +59,14 @@ namespace Runtime.Factory.FactoryUI.SliderArea
 
         private void StopTimer()
         {
+            _factoryView.FactoryVo.TaskAnimator.SetBool(isTaskStart, false);
             _cts?.Cancel();
         }
         
         private void OnStartTimerSignal(StartTimerSignal signal)
         {
             _remainingTime = signal.CountdownTime;
+            _factoryView.FactoryVo.TaskAnimator.SetBool(isTaskStart, true);
             _cts?.Cancel();
             _cts = new CancellationTokenSource();
             StartCountdown(_cts.Token).Forget();
