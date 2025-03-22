@@ -3190,7 +3190,7 @@
 											"top": 495,
 											"width": 262,
 											"height": 13,
-											"text": "ScaneContex"
+											"text": "GameObjectContex"
 										},
 										{
 											"_type": "LabelView",
@@ -4496,7 +4496,7 @@
 					"_parent": {
 						"$ref": "AAAAAAFF+qBWK6M3Z8Y="
 					},
-					"name": "ScaneContex"
+					"name": "GameObjectContex"
 				}
 			]
 		},
