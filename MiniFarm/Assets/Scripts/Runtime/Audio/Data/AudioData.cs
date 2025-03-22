@@ -19,6 +19,7 @@ namespace Runtime.Audio.Data
     public enum Sounds
     {
         None,
-        Gameplay1
+        Gameplay1,
+        ButtonClick
     }
 }

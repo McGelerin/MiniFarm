@@ -1,5 +1,10 @@
+using Lofelt.NiceVibrations;
+using Runtime.Audio;
+using Runtime.Audio.Data;
+using Runtime.Audio.Signal.Audio;
 using Runtime.Factory.Data;
 using Runtime.Factory.Model;
+using Runtime.Haptic.Signal;
 using Runtime.Identifiers;
 using Runtime.Signals.Currency;
 using Runtime.Signals.Production;
@@ -33,6 +38,9 @@ namespace Runtime.Factory.FactoryUI.ProductionButtons
             _signalBus.Fire(new ChangeCurrencyValueSignal((CurrencyTypes)factoryVo.ConsumedResourcesType, -factoryVo.ConsumedResourcesAmount, false));
             _signalBus.Fire(new CheckFactoryProductionSignal());
             _signalBus.Fire(new CheckButtonsInteractableSignal());
+            
+            _signalBus.Fire(new AudioPlaySignal(AudioPlayers.Sound, Sounds.ButtonClick));
+            _signalBus.Fire(new VibrateSignal(HapticPatterns.PresetType.LightImpact));
         }
 
         public void RevokeOrderButtonClick()
@@ -53,6 +61,8 @@ namespace Runtime.Factory.FactoryUI.ProductionButtons
             }
             
             _signalBus.Fire(new CheckButtonsInteractableSignal());
+            _signalBus.Fire(new AudioPlaySignal(AudioPlayers.Sound, Sounds.ButtonClick));
+            _signalBus.Fire(new VibrateSignal(HapticPatterns.PresetType.LightImpact));
         }
     }
 }
