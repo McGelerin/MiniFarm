@@ -5,13 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="bd0f910d-3546-4b73-8a34-8f258550a4c9" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/Assets/Animations/Factory/FactoryTaskAnimController.controller" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animations/Factory/FactoryTaskAnimController.controller" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animations/MillAnim/MillAnimationController.controller" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animations/MillAnim/MillAnimationController.controller" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Environment/farm_granary.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Environment/farm_granary.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Factory/Factory.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Factory/Factory.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/InGame.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/InGame.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Runtime/Factory/Data/ValueObject/FactoryVO.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Runtime/Factory/Data/ValueObject/FactoryVO.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Runtime/Factory/FactoryUI/SliderArea/CountdownTimerHandler.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Runtime/Factory/FactoryUI/SliderArea/CountdownTimerHandler.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Settings/URP-Balanced.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Settings/URP-Balanced.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Settings/URP-HighFidelity.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Settings/URP-HighFidelity.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Settings/URP-Performant.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Settings/URP-Performant.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/TextMesh Pro/Resources/Fonts &amp; Materials/LiberationSans SDF - Fallback.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Resources/Fonts &amp; Materials/LiberationSans SDF - Fallback.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -26,6 +24,7 @@
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/356d430fdcb04bbf8dc54776e1d3627f46ac00/04/17dbc713/Dictionary`2.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/356d430fdcb04bbf8dc54776e1d3627f46ac00/fa/127051a4/ThrowHelper.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/95971c1103884a7eb2035c95161bde2b177000/be/c1275299/Camera.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/a5b7b1716c3648d8a2cb411727693c0e10400/a8/9e7d599e/AudioClip.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/ff2e9f31e14d4a178e56657ed3ccfac97c00/31/e271fd80/Touch.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="ProjectColorInfo">{
@@ -122,6 +121,7 @@
       <workItem from="1742468481472" duration="5166000" />
       <workItem from="1742545535529" duration="10991000" />
       <workItem from="1742594755001" duration="1859000" />
+      <workItem from="1742648292215" duration="3110000" />
     </task>
     <servers />
   </component>
